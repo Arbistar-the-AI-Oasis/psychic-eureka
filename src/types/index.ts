@@ -1,4 +1,4 @@
-import { TokenAmount, Token, Price, Pair } from '@uniswap/sdk';
+import { TokenAmount, Token, Price, Pair } from '@arbistar/sdk';
 import { Version } from '@uniswap/token-lists';
 
 export interface AdsRaw {

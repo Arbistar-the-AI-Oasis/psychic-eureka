@@ -7,7 +7,7 @@ import {
   JSBI,
   TokenAmount,
   Token,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 import { Currency as V3Currency, Token as V3Token } from '@uniswap/sdk-core';
 import { useMemo } from 'react';
 import ERC20_INTERFACE from 'constants/abis/erc20';

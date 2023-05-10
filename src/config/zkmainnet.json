@@ -1,12 +1,13 @@
 {
   "v3": true,
   "v2": false,
-  "rpc": "https://zkevm-rpc.com",
-  "blockExplorer": "https://zkevm.polygonscan.com",
-  "networkName": "Polygon zkEVM",
-  "aprAPINetwork": "zkevm",
+  "rpc": "https://ZK_EVM-rpc.com",
+  "blockExplorer": "https://ZK_EVM.polygonscan.com",
+  "networkName": "Polygon ZK_EVM",
+  "aprAPINetwork": "ZK_EVM",
   "chainId": 1101,
   "isMainnet": true,
+  "isOpened": false,
   "nativeCurrencyImage": "/ETH.png",
   "nativeCurrency": {
     "name": "Ether",

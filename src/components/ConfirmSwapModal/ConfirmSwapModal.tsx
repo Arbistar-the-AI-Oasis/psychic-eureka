@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, Trade } from '@uniswap/sdk';
+import { Currency, currencyEquals, Trade } from '@arbistar/sdk';
 import React, { useCallback, useMemo } from 'react';
 import {
   TransactionConfirmationModal,

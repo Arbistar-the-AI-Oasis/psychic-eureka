@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { createStore, Store } from 'redux';
 import {
   addPopup,

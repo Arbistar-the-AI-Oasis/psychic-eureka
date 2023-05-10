@@ -23,7 +23,7 @@ import {
   useTransactionFinalizer,
 } from 'state/transactions/hooks';
 import { TransactionResponse } from '@ethersproject/abstract-provider';
-import { JSBI, Token } from '@uniswap/sdk';
+import { JSBI, Token } from '@arbistar/sdk';
 import { useTokenBalance } from 'state/wallet/hooks';
 
 interface WithdrawGammaLiquidityModalProps {

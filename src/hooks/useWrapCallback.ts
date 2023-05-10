@@ -1,4 +1,4 @@
-import { ChainId, Currency, currencyEquals, ETHER, WETH } from '@uniswap/sdk';
+import { ChainId, Currency, currencyEquals, ETHER, WETH } from '@arbistar/sdk';
 import {
   Token as V3Token,
   NativeCurrency,

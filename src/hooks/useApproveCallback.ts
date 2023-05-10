@@ -8,7 +8,7 @@ import {
   Fraction,
   Percent,
   ChainId,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 import {
   CurrencyAmount as CurrencyAmountV3,
   Currency,

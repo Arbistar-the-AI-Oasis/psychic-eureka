@@ -16,7 +16,7 @@ import {
   shortenAddress,
 } from 'utils';
 import { LineChart } from 'components';
-import { ChainId, Token } from '@uniswap/sdk';
+import { ChainId, Token } from '@arbistar/sdk';
 import dayjs from 'dayjs';
 import { unwrappedToken } from 'utils/wrappedCurrency';
 import { getIntervalTokenDataV3, getTokenInfoV3 } from 'utils/v3-graph';

@@ -1,5 +1,5 @@
 import { fetchFarms, IFarmRewardsData, IFullFarm } from '@cryption/df-sdk-core';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { CNTFarmListInfo, StakingRaw } from 'types';
 import Web3 from 'web3';
 

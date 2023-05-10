@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@uniswap/sdk';
+import { ChainId, JSBI, Percent, Token, WETH } from '@arbistar/sdk';
 import { Presets } from 'state/mint/v3/reducer';
 import { NEW_QUICK_ADDRESS, QUICK_ADDRESS } from './v3/addresses';
 
@@ -8,9 +8,11 @@ export const CHAIN_IDS_TO_NAMES = {
   [ChainId.MATIC]: 'matic',
   [ChainId.MUMBAI]: 'mumbai',
   [ChainId.DOGECHAIN]: 'dogechain',
-  [ChainId.DOEGCHAIN_TESTNET]: 'dogechain_testnet',
-  [ChainId.ZKEVM]: 'zkevm',
+  [ChainId.DOGE_TESTNET]: 'dogechain_testnet',
+  [ChainId.ZK_EVM]: 'ZK_EVM',
   [ChainId.ZKTESTNET]: 'zkevm_testnet',
+  [ChainId.ARBITRUM]: 'Arbitrum_One',
+  [ChainId.SEPOLIA]: 'sepolia_testnet',
 };
 
 export enum TxnType {
@@ -51,7 +53,7 @@ export const WALLCHAIN_PARAMS = {
       apiKey: '',
     },
   },
-  [ChainId.DOEGCHAIN_TESTNET]: {
+  [ChainId.DOGE_TESTNET]: {
     [SmartRouter.PARASWAP]: {
       apiURL: '',
       apiKey: '',
@@ -81,7 +83,7 @@ export const WALLCHAIN_PARAMS = {
       apiKey: '',
     },
   },
-  [ChainId.ZKEVM]: {
+  [ChainId.ZK_EVM]: {
     [SmartRouter.PARASWAP]: {
       apiURL: '',
       apiKey: '',
@@ -96,10 +98,10 @@ export const WALLCHAIN_PARAMS = {
 export const BONUS_CUTOFF_AMOUNT = {
   [ChainId.MUMBAI]: 0,
   [ChainId.MATIC]: 0,
-  [ChainId.DOEGCHAIN_TESTNET]: 0,
+  [ChainId.DOGE_TESTNET]: 0,
   [ChainId.DOGECHAIN]: 0,
   [ChainId.ZKTESTNET]: 0,
-  [ChainId.ZKEVM]: 0,
+  [ChainId.ZK_EVM]: 0,
 };
 
 export const GlobalConst = {
@@ -202,14 +204,7 @@ export const GlobalConst = {
   },
 };
 
-export const SUPPORTED_CHAINIDS = [
-  ChainId.MATIC,
-  ChainId.MUMBAI,
-  ChainId.DOGECHAIN,
-  ChainId.DOEGCHAIN_TESTNET,
-  ChainId.ZKTESTNET,
-  ChainId.ZKEVM,
-];
+export const SUPPORTED_CHAINIDS = [ChainId.ARBITRUM, ChainId.SEPOLIA];
 
 export interface GammaPair {
   address: string;
@@ -1036,10 +1031,12 @@ export const GammaPairs: {
     ],
   },
   [ChainId.MUMBAI]: {},
-  [ChainId.DOEGCHAIN_TESTNET]: {},
+  [ChainId.DOGE_TESTNET]: {},
   [ChainId.DOGECHAIN]: {},
   [ChainId.ZKTESTNET]: {},
-  [ChainId.ZKEVM]: {},
+  [ChainId.ZK_EVM]: {},
+  [ChainId.ARBITRUM]: {},
+  [ChainId.SEPOLIA]: {},
 };
 
 // export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
@@ -1488,7 +1485,7 @@ export const ContestPairs: any = {
       token1Address: '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619',
     },
   ],
-  [ChainId.ZKEVM]: [
+  [ChainId.ZK_EVM]: [
     {
       name: 'All',
       address: 'all',
@@ -1518,7 +1515,7 @@ export const ContestPairs: any = {
       token1Address: '0xa2036f0538221a77a3937f1379699f44945018d0',
     },
   ],
-  [ChainId.DOEGCHAIN_TESTNET]: [],
+  [ChainId.DOGE_TESTNET]: [],
   [ChainId.DOGECHAIN]: [],
   [ChainId.ZKTESTNET]: [],
   [ChainId.MUMBAI]: [],

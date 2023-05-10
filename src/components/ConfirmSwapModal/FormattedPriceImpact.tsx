@@ -1,4 +1,4 @@
-import { Percent } from '@uniswap/sdk';
+import { Percent } from '@arbistar/sdk';
 import React from 'react';
 import { GlobalConst } from '../../constants';
 import { warningSeverity } from '../../utils/prices';

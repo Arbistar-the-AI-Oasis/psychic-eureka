@@ -1,5 +1,5 @@
-import { ChainId, WETH } from '@uniswap/sdk';
-import { Token } from '@uniswap/sdk';
+import { ChainId, WETH } from '@arbistar/sdk';
+import { Token } from '@arbistar/sdk';
 import { Token as TokenV3 } from '@uniswap/sdk-core';
 import { V3Currency } from 'v3lib/entities/v3Currency';
 
@@ -20,10 +20,12 @@ type ChainTokenList = {
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MUMBAI]: [WETH[ChainId.MUMBAI]],
   [ChainId.MATIC]: [WETH[ChainId.MATIC]],
-  [ChainId.DOEGCHAIN_TESTNET]: [WETH[ChainId.DOEGCHAIN_TESTNET]],
+  [ChainId.DOGE_TESTNET]: [WETH[ChainId.DOGE_TESTNET]],
   [ChainId.DOGECHAIN]: [WETH[ChainId.DOGECHAIN]],
   [ChainId.ZKTESTNET]: [WETH[ChainId.ZKTESTNET]],
-  [ChainId.ZKEVM]: [WETH[ChainId.ZKEVM]],
+  [ChainId.ZK_EVM]: [WETH[ChainId.ZK_EVM]],
+  [ChainId.ARBITRUM]: [WETH[ChainId.ARBITRUM]],
+  [ChainId.SEPOLIA]: [WETH[ChainId.SEPOLIA]],
 };
 
 export const toV3Token = (t: {
@@ -48,38 +50,40 @@ export const toV3Currency = (t: {
 export const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {
   [ChainId.MUMBAI]: '0xc7efb32470dee601959b15f1f923e017c6a918ca', //TODO: CHANGE THIS
   [ChainId.MATIC]: '0x02817C1e3543c2d908a590F5dB6bc97f933dB4BD',
-  [ChainId.DOEGCHAIN_TESTNET]: '0x02817C1e3543c2d908a590F5dB6bc97f933dB4BD',
+  [ChainId.DOGE_TESTNET]: '0x02817C1e3543c2d908a590F5dB6bc97f933dB4BD',
   [ChainId.DOGECHAIN]: '0x0110B3b142031F85a80Afdc9C7bcAA80dAfe7C63',
   [ChainId.ZKTESTNET]: '0x54E11f6955B533CC3AcEe908c89C407e3e754fc0',
-  [ChainId.ZKEVM]: '0x450c0ff30a17b8f6ccbec25e41e4461cf89719d7',
+  [ChainId.ZK_EVM]: '0x450c0ff30a17b8f6ccbec25e41e4461cf89719d7',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0xcA11bde05977b3631167028862bE2a173976CA11',
 };
 
 export const V3_CORE_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.MATIC]: '0x411b0fAcC3489691f28ad58c47006AF5E3Ab3A28',
   [ChainId.DOGECHAIN]: '0xd2480162Aa7F02Ead7BF4C127465446150D58452',
   [ChainId.ZKTESTNET]: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
-  [ChainId.ZKEVM]: '0x4B9f4d2435Ef65559567e5DbFC1BbB37abC43B57',
+  [ChainId.ZK_EVM]: '0x4B9f4d2435Ef65559567e5DbFC1BbB37abC43B57',
 };
 
 export const POOL_DEPLOYER_ADDRESS: AddressMap = {
   [ChainId.MATIC]: '0x2D98E2FA9da15aa6dC9581AB097Ced7af697CB92',
   [ChainId.DOGECHAIN]: '0x56c2162254b0E4417288786eE402c2B41d4e181e',
   [ChainId.ZKTESTNET]: '0x6c28AeF8977c9B773996d0e8376d2EE379446F2f',
-  [ChainId.ZKEVM]: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
+  [ChainId.ZK_EVM]: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
 };
 
 export const QUOTER_ADDRESSES: AddressMap = {
   [ChainId.MATIC]: '0xa15F0D7377B2A0C0c10db057f641beD21028FC89',
   [ChainId.DOGECHAIN]: '0xd8E1E7009802c914b0d39B31Fc1759A865b727B1',
   [ChainId.ZKTESTNET]: '0x930388c769Da7B4616493d47B5D093D8ec26C969',
-  [ChainId.ZKEVM]: '0x55BeE1bD3Eb9986f6d2d963278de09eE92a3eF1D',
+  [ChainId.ZK_EVM]: '0x55BeE1bD3Eb9986f6d2d963278de09eE92a3eF1D',
 };
 
 export const SWAP_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.MATIC]: '0xf5b509bB0909a69B1c207E495f687a596C168E12',
   [ChainId.DOGECHAIN]: '0x4aE2bD0666c76C7f39311b9B3e39b53C8D7C43Ea',
   [ChainId.ZKTESTNET]: '0x481FcFa00Ee6b2384FF0B3c3b5b29aD911c1AAA7',
-  [ChainId.ZKEVM]: '0xF6Ad3CcF71Abb3E12beCf6b3D2a74C963859ADCd',
+  [ChainId.ZK_EVM]: '0xF6Ad3CcF71Abb3E12beCf6b3D2a74C963859ADCd',
 };
 
 export const SWAP_ROUTER_ADDRESS: AddressMap = {
@@ -90,7 +94,7 @@ export const NONFUNGIBLE_POSITION_MANAGER_ADDRESSES: AddressMap = {
   [ChainId.MATIC]: '0x8eF88E4c7CfbbaC1C163f7eddd4B578792201de6',
   [ChainId.DOGECHAIN]: '0x0b012055F770AE7BB7a8303968A7Fb6088A2296e',
   [ChainId.ZKTESTNET]: '0xE86Ba90bf805cEa452c8FA6E37b4ae2D17D32599',
-  [ChainId.ZKEVM]: '0xd8E1E7009802c914b0d39B31Fc1759A865b727B1',
+  [ChainId.ZK_EVM]: '0xd8E1E7009802c914b0d39B31Fc1759A865b727B1',
 };
 
 export const GAMMA_UNIPROXY_ADDRESSES: AddressMap = {
@@ -110,14 +114,14 @@ export const MULTICALL_ADDRESS: AddressMap = {
   [ChainId.MATIC]: '0x6ccb9426CeceE2903FbD97fd833fD1D31c100292',
   [ChainId.DOGECHAIN]: '0x23602819a9E2B1C8eC7605356D5b0F1FBB10ddA5',
   [ChainId.ZKTESTNET]: '0x49b698B703D7bdFC81488Ca3C22Ad010eBCf2126',
-  [ChainId.ZKEVM]: '0x61530d6E1c7A47BBB3e48e8b8EdF7569DcFeE121',
+  [ChainId.ZK_EVM]: '0x61530d6E1c7A47BBB3e48e8b8EdF7569DcFeE121',
 };
 
 export const V3_MIGRATOR_ADDRESSES: AddressMap = {
   [ChainId.MATIC]: '0x157B9913E00204f8c980bb00aa62E22b0dAb1a63',
   [ChainId.DOGECHAIN]: '0xB9aFAa5c407DdebA5098193F31CE23D21cFD9657',
   [ChainId.ZKTESTNET]: '0x6909BE1eA255885a02D182bdFB54eD838502Ec91',
-  [ChainId.ZKEVM]: '0x4aE2bD0666c76C7f39311b9B3e39b53C8D7C43Ea',
+  [ChainId.ZK_EVM]: '0x4aE2bD0666c76C7f39311b9B3e39b53C8D7C43Ea',
 };
 
 export const REAL_STAKER_ADDRESS: AddressMap = {
@@ -128,19 +132,19 @@ export const REAL_STAKER_ADDRESS: AddressMap = {
 export const FINITE_FARMING: AddressMap = {
   [ChainId.MATIC]: '0x9923f42a02A82dA63EE0DbbC5f8E311e3DD8A1f8',
   [ChainId.DOGECHAIN]: '0x481FcFa00Ee6b2384FF0B3c3b5b29aD911c1AAA7',
-  [ChainId.ZKEVM]: '0x17bE2Ed4409d8e6c22d46dE599f7C9Af40bD0759',
+  [ChainId.ZK_EVM]: '0x17bE2Ed4409d8e6c22d46dE599f7C9Af40bD0759',
 };
 
 export const INFINITE_FARMING_ADDRESS: AddressMap = {
   [ChainId.MATIC]: '0x8a26436e41d0b5fc4C6Ed36C1976fafBe173444E',
   [ChainId.DOGECHAIN]: '0xC712F63E4D57ED1684FB4b428a1DFF10e3338F25',
-  [ChainId.ZKEVM]: '0x1fd3f47B363f5b844eD7B7FAB6ceb679A367621E',
+  [ChainId.ZK_EVM]: '0x1fd3f47B363f5b844eD7B7FAB6ceb679A367621E',
 };
 
 export const FARMING_CENTER: AddressMap = {
   [ChainId.MATIC]: '0x7F281A8cdF66eF5e9db8434Ec6D97acc1bc01E78',
   [ChainId.DOGECHAIN]: '0x82831E9565cb574375596eFc090da465283E22A4',
-  [ChainId.ZKEVM]: '0x481FcFa00Ee6b2384FF0B3c3b5b29aD911c1AAA7',
+  [ChainId.ZK_EVM]: '0x481FcFa00Ee6b2384FF0B3c3b5b29aD911c1AAA7',
 };
 
 export const V2_FACTORY_ADDRESSES: AddressMap = {
@@ -194,10 +198,14 @@ export const NEW_LAIR_ADDRESS: AddressMap = {
 
 export const QUICK_ADDRESS: AddressMap = {
   [ChainId.MATIC]: '0x831753DD7087CaC61aB5644b308642cc1c33Dc13',
+  [ChainId.ARBITRUM]: '0x831753DD7087CaC61aB5644b308642cc1c33Dc13',
+  [ChainId.SEPOLIA]: '0x831753DD7087CaC61aB5644b308642cc1c33Dc13',
 };
 
 export const NEW_QUICK_ADDRESS: AddressMap = {
   [ChainId.MATIC]: '0xB5C064F955D8e7F38fE0460C556a72987494eE17',
+  [ChainId.ARBITRUM]: '0xB5C064F955D8e7F38fE0460C556a72987494eE17',
+  [ChainId.SEPOLIA]: '0xB5C064F955D8e7F38fE0460C556a72987494eE17',
 };
 
 export const DL_QUICK_ADDRESS: AddressMap = {
@@ -260,9 +268,23 @@ export const WMATIC_EXTENDED: { [chainId: number]: TokenV3 } = {
     'WETH',
     'Wrapped ETHER',
   ),
-  [ChainId.ZKEVM]: new TokenV3(
-    ChainId.ZKEVM,
+  [ChainId.ZK_EVM]: new TokenV3(
+    ChainId.ZK_EVM,
     '0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9',
+    18,
+    'WETH',
+    'Wrapped ETHER',
+  ),
+  [ChainId.ARBITRUM]: new TokenV3(
+    ChainId.ARBITRUM,
+    '0xb16F35c0Ae2912430DAc15764477E179D9B9EbEa',
+    18,
+    'WETH',
+    'Wrapped ETHER',
+  ),
+  [ChainId.SEPOLIA]: new TokenV3(
+    ChainId.SEPOLIA,
+    '0xFA83579eEc97290773602029c8970A18cfA742b5',
     18,
     'WETH',
     'Wrapped ETHER',
@@ -291,10 +313,24 @@ export const USDC: { [chainId: number]: Token } = {
     'USDC',
     'USD Coin',
   ),
-  [ChainId.ZKEVM]: new Token(
-    ChainId.ZKEVM,
+  [ChainId.ZK_EVM]: new Token(
+    ChainId.ZK_EVM,
     '0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035',
     6,
+    'USDC',
+    'USD Coin',
+  ),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
+    6,
+    'USDC',
+    'USD Coin',
+  ),
+  [ChainId.SEPOLIA]: new Token(
+    ChainId.SEPOLIA,
+    '0x34d570d1546632923e82563365281c59c708D7f1',
+    18,
     'USDC',
     'USD Coin',
   ),
@@ -322,8 +358,22 @@ export const USDT: { [chainId: number]: Token } = {
     'USDT',
     'Tether USD',
   ),
-  [ChainId.ZKEVM]: new Token(
-    ChainId.ZKEVM,
+  [ChainId.ZK_EVM]: new Token(
+    ChainId.ZK_EVM,
+    '0x1E4a5963aBFD975d8c9021ce480b42188849D41d',
+    6,
+    'USDT',
+    'Tether USD',
+  ),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    '0x1E4a5963aBFD975d8c9021ce480b42188849D41d',
+    6,
+    'USDT',
+    'Tether USD',
+  ),
+  [ChainId.SEPOLIA]: new Token(
+    ChainId.SEPOLIA,
     '0x1E4a5963aBFD975d8c9021ce480b42188849D41d',
     6,
     'USDT',
@@ -339,12 +389,40 @@ export const OLD_QUICK: { [chainId: number]: Token } = {
     'QUICK(OLD)',
     'Quickswap(OLD)',
   ),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    QUICK_ADDRESS[ChainId.ARBITRUM],
+    18,
+    'QUICK(OLD)',
+    'Quickswap(OLD)',
+  ),
+  [ChainId.SEPOLIA]: new Token(
+    ChainId.SEPOLIA,
+    QUICK_ADDRESS[ChainId.SEPOLIA],
+    18,
+    'QUICK(OLD)',
+    'Quickswap(OLD)',
+  ),
 };
 
 export const NEW_QUICK: { [chainId: number]: Token } = {
   [ChainId.MATIC]: new Token(
     ChainId.MATIC,
     NEW_QUICK_ADDRESS[ChainId.MATIC],
+    18,
+    'QUICK',
+    'QuickSwap(NEW)',
+  ),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    NEW_QUICK_ADDRESS[ChainId.ARBITRUM],
+    18,
+    'QUICK',
+    'QuickSwap(NEW)',
+  ),
+  [ChainId.SEPOLIA]: new Token(
+    ChainId.SEPOLIA,
+    NEW_QUICK_ADDRESS[ChainId.SEPOLIA],
     18,
     'QUICK',
     'QuickSwap(NEW)',
@@ -386,8 +464,22 @@ export const WBTC: { [chainId: number]: Token } = {
     'wBTC',
     'Wrapped Bitcoin',
   ),
-  [ChainId.ZKEVM]: new Token(
-    ChainId.ZKEVM,
+  [ChainId.ZK_EVM]: new Token(
+    ChainId.ZK_EVM,
+    '0xEA034fb02eB1808C2cc3adbC15f447B93CbE08e1',
+    8,
+    'wBTC',
+    'Wrapped Bitcoin',
+  ),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    '0xfA9343C3897324496A05fC75abeD6bAC29f8A40f',
+    8,
+    'wBTC',
+    'Wrapped Bitcoin',
+  ),
+  [ChainId.SEPOLIA]: new Token(
+    ChainId.SEPOLIA,
     '0xEA034fb02eB1808C2cc3adbC15f447B93CbE08e1',
     8,
     'wBTC',
@@ -410,8 +502,22 @@ export const DAI: { [chainId: number]: Token } = {
     'DAI',
     'Dai Stablecoin',
   ),
-  [ChainId.ZKEVM]: new Token(
-    ChainId.ZKEVM,
+  [ChainId.ZK_EVM]: new Token(
+    ChainId.ZK_EVM,
+    '0xC5015b9d9161Dca7e18e32f6f25C4aD850731Fd4',
+    18,
+    'DAI',
+    'Dai Stablecoin',
+  ),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    '0xC5015b9d9161Dca7e18e32f6f25C4aD850731Fd4',
+    18,
+    'DAI',
+    'Dai Stablecoin',
+  ),
+  [ChainId.SEPOLIA]: new Token(
+    ChainId.SEPOLIA,
     '0xC5015b9d9161Dca7e18e32f6f25C4aD850731Fd4',
     18,
     'DAI',
@@ -436,11 +542,29 @@ export const ETHER: { [chainId: number]: Token } = {
     'ETH',
     'Ether',
   ),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    '0xB44a9B6905aF7c801311e8F4E76932ee959c663C',
+    18,
+    //TODO: this should really have a difference symbol but we use 'ETH' hardcoded to represent native
+    //Due to Uniswap SDK implmentation
+    'ETH',
+    'Ether',
+  ),
+  [ChainId.SEPOLIA]: new Token(
+    ChainId.SEPOLIA,
+    '0xB44a9B6905aF7c801311e8F4E76932ee959c663C',
+    18,
+    //TODO: this should really have a difference symbol but we use 'ETH' hardcoded to represent native
+    //Due to Uniswap SDK implmentation
+    'ETH',
+    'Ether',
+  ),
 };
 
 export const MATIC: { [chainId: number]: Token } = {
-  [ChainId.ZKEVM]: new Token(
-    ChainId.ZKEVM,
+  [ChainId.ZK_EVM]: new Token(
+    ChainId.ZK_EVM,
     '0xa2036f0538221a77A3937F1379699f44945018d0',
     18,
     'MATIC',
@@ -462,6 +586,20 @@ export const MI: { [chainId: number]: Token } = {
     18,
     'MAI',
     'miMATIC',
+  ),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    '0xfA9343C3897324496A05fC75abeD6bAC29f8A40f',
+    8,
+    'wBTC',
+    'Wrapped Bitcoin',
+  ),
+  [ChainId.SEPOLIA]: new Token(
+    ChainId.SEPOLIA,
+    '0xEA034fb02eB1808C2cc3adbC15f447B93CbE08e1',
+    8,
+    'wBTC',
+    'Wrapped Bitcoin',
   ),
 };
 
@@ -619,13 +757,13 @@ export const V3_BASES_TO_CHECK_TRADES_AGAINST: {
     WMATIC_EXTENDED[ChainId.ZKTESTNET],
     toV3Token(USDT[ChainId.ZKTESTNET]),
   ],
-  [ChainId.ZKEVM]: [
-    WMATIC_EXTENDED[ChainId.ZKEVM],
-    toV3Token(USDT[ChainId.ZKEVM]),
-    toV3Token(USDC[ChainId.ZKEVM]),
-    toV3Token(MATIC[ChainId.ZKEVM]),
-    toV3Token(DAI[ChainId.ZKEVM]),
-    toV3Token(WBTC[ChainId.ZKEVM]),
+  [ChainId.ZK_EVM]: [
+    WMATIC_EXTENDED[ChainId.ZK_EVM],
+    toV3Token(USDT[ChainId.ZK_EVM]),
+    toV3Token(USDC[ChainId.ZK_EVM]),
+    toV3Token(MATIC[ChainId.ZK_EVM]),
+    toV3Token(DAI[ChainId.ZK_EVM]),
+    toV3Token(WBTC[ChainId.ZK_EVM]),
   ],
 };
 
@@ -653,13 +791,32 @@ export const SUGGESTED_BASES: {
     DC[ChainId.DOGECHAIN],
   ],
   [ChainId.ZKTESTNET]: [WETH[ChainId.ZKTESTNET], USDT[ChainId.ZKTESTNET]],
-  [ChainId.ZKEVM]: [
-    WETH[ChainId.ZKEVM],
-    USDT[ChainId.ZKEVM],
-    USDC[ChainId.ZKEVM],
-    MATIC[ChainId.ZKEVM],
-    DAI[ChainId.ZKEVM],
-    WBTC[ChainId.ZKEVM],
+  [ChainId.ZK_EVM]: [
+    WETH[ChainId.ZK_EVM],
+    USDT[ChainId.ZK_EVM],
+    USDC[ChainId.ZK_EVM],
+    MATIC[ChainId.ZK_EVM],
+    DAI[ChainId.ZK_EVM],
+    WBTC[ChainId.ZK_EVM],
+  ],
+  [ChainId.ARBITRUM]: [
+    WETH[ChainId.ARBITRUM],
+    USDT[ChainId.ARBITRUM],
+    USDC[ChainId.ARBITRUM],
+    MATIC[ChainId.ARBITRUM],
+    DAI[ChainId.ARBITRUM],
+    WBTC[ChainId.ARBITRUM],
+  ],
+  [ChainId.SEPOLIA]: [
+    ...WETH_ONLY[ChainId.SEPOLIA],
+    DAI[ChainId.SEPOLIA],
+    USDC[ChainId.SEPOLIA],
+    USDT[ChainId.SEPOLIA],
+    OLD_QUICK[ChainId.SEPOLIA],
+    NEW_QUICK[ChainId.SEPOLIA],
+    ETHER[ChainId.SEPOLIA],
+    WBTC[ChainId.SEPOLIA],
+    MI[ChainId.SEPOLIA],
   ],
 };
 
@@ -710,13 +867,13 @@ export const V3_BASES_TO_TRACK_LIQUIDITY_FOR: {
     WMATIC_EXTENDED[ChainId.ZKTESTNET],
     toV3Token(USDT[ChainId.ZKTESTNET]),
   ],
-  [ChainId.ZKEVM]: [
-    WMATIC_EXTENDED[ChainId.ZKEVM],
-    toV3Token(USDT[ChainId.ZKEVM]),
-    toV3Token(USDC[ChainId.ZKEVM]),
-    toV3Token(MATIC[ChainId.ZKEVM]),
-    toV3Token(DAI[ChainId.ZKEVM]),
-    toV3Token(WBTC[ChainId.ZKEVM]),
+  [ChainId.ZK_EVM]: [
+    WMATIC_EXTENDED[ChainId.ZK_EVM],
+    toV3Token(USDT[ChainId.ZK_EVM]),
+    toV3Token(USDC[ChainId.ZK_EVM]),
+    toV3Token(MATIC[ChainId.ZK_EVM]),
+    toV3Token(DAI[ChainId.ZK_EVM]),
+    toV3Token(WBTC[ChainId.ZK_EVM]),
   ],
 };
 

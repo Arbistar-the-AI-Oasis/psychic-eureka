@@ -16,7 +16,7 @@ import NoTierIcon from '../../assets/images/no-tier-icon.png';
 import BachelorTierIcon from '../../assets/images/bachelor-tier-icon.png';
 import MasterTierIcon from '../../assets/images/master-tier-icon.png';
 import ProfessorTierIcon from '../../assets/images/professor-tier-icon.png';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { useTranslation } from 'react-i18next';
 
 interface StakeModalFarmingTiersProps {

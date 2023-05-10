@@ -11,7 +11,7 @@ import {
   useNetworkSelectionModalToggle,
 } from 'state/application/hooks';
 import { useTranslation } from 'react-i18next';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { ApplicationModal } from 'state/application/actions';
 import { useIsSupportedNetwork } from 'utils';
 import { networkConnection, walletConnectConnection } from 'connectors';
@@ -21,7 +21,7 @@ const NetworkSelectionModal: React.FC = () => {
   const { chainId, connector } = useActiveWeb3React();
   const supportedChains = SUPPORTED_CHAINIDS.filter((chain) => {
     const config = getConfig(chain);
-    return config && config.isMainnet;
+    return config && config.isOpened;
   });
   const modalOpen = useModalOpen(ApplicationModal.NETWORK_SELECTION);
   const toggleModal = useNetworkSelectionModalToggle();

@@ -7,7 +7,7 @@ import { useActiveWeb3React } from 'hooks';
 import { GlobalConst } from 'constants/index';
 import { useTranslation } from 'react-i18next';
 import { useDefaultFarmList } from 'state/farms/hooks';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import useParsedQueryString from 'hooks/useParsedQueryString';
 
 const FarmRewards: React.FC<{ bulkPairs: any }> = ({ bulkPairs }) => {

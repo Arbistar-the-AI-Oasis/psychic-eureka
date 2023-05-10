@@ -18,7 +18,7 @@ import './index.scss';
 import { Box } from '@material-ui/core';
 import { Add, Remove } from '@material-ui/icons';
 import { USDC } from 'constants/v3/addresses';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { useActiveWeb3React } from 'hooks';
 import { useTranslation } from 'react-i18next';
 

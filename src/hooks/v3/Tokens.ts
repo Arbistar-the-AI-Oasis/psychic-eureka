@@ -9,7 +9,7 @@ import { useActiveWeb3React } from 'hooks';
 import { useBytes32TokenContract, useTokenContract } from 'hooks/useContract';
 import { ExtendedEther, WMATIC_EXTENDED } from 'constants/v3/addresses';
 import { TokenAddressMap, useSelectedTokenList } from 'state/lists/v3/hooks';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { CHAIN_INFO } from 'constants/v3/chains';
 
 // reduce token map into standard address <-> Token mapping, optionally include user added tokens
@@ -186,7 +186,7 @@ export function useCurrency(
 ): Currency | null | undefined {
   const { chainId } = useActiveWeb3React();
   const chainIdToUse = chainId ?? ChainId.MATIC;
-
+  console.log(chainIdToUse);
   const chainInfo = CHAIN_INFO[chainIdToUse];
 
   const isETH =

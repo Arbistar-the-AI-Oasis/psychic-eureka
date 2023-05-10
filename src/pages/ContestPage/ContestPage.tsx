@@ -26,7 +26,7 @@ import { useActiveWeb3React } from 'hooks';
 import { getLensProfiles } from 'utils/getLensProfile';
 import { getConfig } from 'config';
 import { useHistory } from 'react-router-dom';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 dayjs.extend(utc);
 dayjs.extend(weekOfYear);
 

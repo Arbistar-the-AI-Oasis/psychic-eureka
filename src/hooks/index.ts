@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 import { useWeb3React } from '@web3-react/core';
-import { ChainId, Pair } from '@uniswap/sdk';
+import { ChainId, Pair } from '@arbistar/sdk';
 import {
   ConnectionType,
   coinbaseWalletConnection,

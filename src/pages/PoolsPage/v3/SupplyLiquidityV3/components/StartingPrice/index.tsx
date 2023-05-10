@@ -19,7 +19,7 @@ import Input from 'components/NumericalInput';
 import { Box, Button } from '@material-ui/core';
 import Badge, { BadgeVariant } from 'components/v3/Badge';
 import { Error } from '@material-ui/icons';
-import { JSBI } from '@uniswap/sdk';
+import { JSBI } from '@arbistar/sdk';
 import { useTranslation } from 'react-i18next';
 
 interface IPrice {

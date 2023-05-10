@@ -1,7 +1,7 @@
 import { ApolloClient } from 'apollo-client';
 import { InMemoryCache, NormalizedCacheObject } from 'apollo-cache-inmemory';
 import { HttpLink } from 'apollo-link-http';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 
 export type ApolloChainMap = Readonly<
   {
@@ -22,7 +22,7 @@ export const clientV2: ApolloChainMap = {
     }),
     cache: new InMemoryCache(),
   }),
-  [ChainId.DOEGCHAIN_TESTNET]: new ApolloClient({
+  [ChainId.DOGE_TESTNET]: new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_GRAPH_V2_568_API_URL,
     }),
@@ -40,7 +40,7 @@ export const clientV2: ApolloChainMap = {
     }),
     cache: new InMemoryCache(),
   }),
-  [ChainId.ZKEVM]: new ApolloClient({
+  [ChainId.ZK_EVM]: new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_GRAPH_V2_1101_API_URL,
     }),
@@ -67,7 +67,7 @@ export const clientV3: ApolloChainMap = {
     }),
     cache: new InMemoryCache(),
   }),
-  [ChainId.DOEGCHAIN_TESTNET]: new ApolloClient({
+  [ChainId.DOGE_TESTNET]: new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_GRAPH_V3_568_API_URL,
     }),
@@ -79,7 +79,7 @@ export const clientV3: ApolloChainMap = {
     }),
     cache: new InMemoryCache(),
   }),
-  [ChainId.ZKEVM]: new ApolloClient({
+  [ChainId.ZK_EVM]: new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_GRAPH_V3_1101_API_URL,
     }),
@@ -106,7 +106,7 @@ export const farmingClient: ApolloChainMap = {
     }),
     cache: new InMemoryCache(),
   }),
-  [ChainId.DOEGCHAIN_TESTNET]: new ApolloClient({
+  [ChainId.DOGE_TESTNET]: new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_V3_FARMING_API_568_URL,
     }),
@@ -118,7 +118,7 @@ export const farmingClient: ApolloChainMap = {
     }),
     cache: new InMemoryCache(),
   }),
-  [ChainId.ZKEVM]: new ApolloClient({
+  [ChainId.ZK_EVM]: new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_V3_FARMING_API_1101_URL,
     }),
@@ -145,7 +145,7 @@ export const txClient: ApolloChainMap = {
     }),
     cache: new InMemoryCache(),
   }),
-  [ChainId.DOEGCHAIN_TESTNET]: new ApolloClient({
+  [ChainId.DOGE_TESTNET]: new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_GRAPH_V2_568_API_URL,
     }),
@@ -157,7 +157,7 @@ export const txClient: ApolloChainMap = {
     }),
     cache: new InMemoryCache(),
   }),
-  [ChainId.ZKEVM]: new ApolloClient({
+  [ChainId.ZK_EVM]: new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_GRAPH_V2_1101_API_URL,
     }),
@@ -184,7 +184,7 @@ export const blockClient: ApolloChainMap = {
     }),
     cache: new InMemoryCache(),
   }),
-  [ChainId.DOEGCHAIN_TESTNET]: new ApolloClient({
+  [ChainId.DOGE_TESTNET]: new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_GRAPH_568_BLOCK_CLIENT_API_URL,
     }),
@@ -196,7 +196,7 @@ export const blockClient: ApolloChainMap = {
     }),
     cache: new InMemoryCache(),
   }),
-  [ChainId.ZKEVM]: new ApolloClient({
+  [ChainId.ZK_EVM]: new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_GRAPH_1101_BLOCK_CLIENT_API_URL,
     }),

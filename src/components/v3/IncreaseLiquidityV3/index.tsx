@@ -32,7 +32,7 @@ import CurrencyInputPanel from 'components/v3/CurrencyInputPanel';
 import { maxAmountSpend } from 'utils/v3/maxAmountSpend';
 import { calculateGasMarginV3 } from 'utils';
 import { useToken } from 'hooks/v3/Tokens';
-import { JSBI } from '@uniswap/sdk';
+import { JSBI } from '@arbistar/sdk';
 import { PositionPool } from 'models/interfaces';
 import { useTranslation } from 'react-i18next';
 import { DoubleCurrencyLogo, CurrencyLogo } from 'components';

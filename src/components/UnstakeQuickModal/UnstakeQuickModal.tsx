@@ -13,7 +13,7 @@ import Web3 from 'web3';
 import { calculateGasMargin, formatTokenAmount } from 'utils';
 import { useTranslation } from 'react-i18next';
 import { useActiveWeb3React } from 'hooks';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { DLDQUICK, OLD_DQUICK } from 'constants/v3/addresses';
 
 const web3 = new Web3();

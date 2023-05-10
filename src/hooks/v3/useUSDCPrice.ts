@@ -2,7 +2,7 @@ import { Currency, CurrencyAmount, Price, Token } from '@uniswap/sdk-core';
 import { useActiveWeb3React } from 'hooks';
 import { useMemo } from 'react';
 import { useBestV3TradeExactOut } from './useBestV3Trade';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { toV3Token, USDC } from 'constants/v3/addresses';
 
 /**

@@ -23,7 +23,7 @@ import { useHistory } from 'react-router-dom';
 import { ExpandLess, ExpandMore } from '@material-ui/icons';
 import Badge from 'components/v3/Badge';
 import PositionListItemDetails from '../PositionListItemDetails';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { useTranslation } from 'react-i18next';
 
 interface PositionListItemProps {

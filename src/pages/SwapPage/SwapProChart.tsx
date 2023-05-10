@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { useActiveWeb3React } from 'hooks';
 import React from 'react';
 import { useIsV2 } from 'state/application/hooks';

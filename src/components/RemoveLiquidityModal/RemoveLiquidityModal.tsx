@@ -2,7 +2,7 @@ import React, { useState, useMemo, useCallback } from 'react';
 import { Contract } from '@ethersproject/contracts';
 import { ArrowLeft, ArrowDown } from 'react-feather';
 import { Box, Button } from '@material-ui/core';
-import { ChainId, Currency, ETHER, JSBI, Percent } from '@uniswap/sdk';
+import { ChainId, Currency, ETHER, JSBI, Percent } from '@arbistar/sdk';
 import ReactGA from 'react-ga';
 import { BigNumber } from '@ethersproject/bignumber';
 import { TransactionResponse } from '@ethersproject/providers';

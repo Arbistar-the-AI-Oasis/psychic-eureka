@@ -10,7 +10,7 @@ import {
 import invariant from 'tiny-invariant';
 import JSBI from 'jsbi';
 import { V2_FACTORY_ADDRESSES } from 'constants/v3/addresses';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 
 export const FACTORY_ADDRESS = V2_FACTORY_ADDRESSES[ChainId.MATIC];
 export const INIT_CODE_HASH =

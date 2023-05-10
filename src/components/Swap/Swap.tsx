@@ -7,7 +7,7 @@ import {
   ChainId,
   ETHER,
   currencyEquals,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 import ReactGA from 'react-ga';
 import { ArrowDown } from 'react-feather';
 import { Box, Button, CircularProgress } from '@material-ui/core';

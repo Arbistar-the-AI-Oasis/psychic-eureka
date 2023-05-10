@@ -9,7 +9,7 @@ import {
   useNetworkSelectionModalToggle,
 } from 'state/application/hooks';
 import { useTranslation } from 'react-i18next';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { getConfig } from 'config';
 
 const HeroSection: React.FC<{ globalData: any; v3GlobalData: any }> = ({

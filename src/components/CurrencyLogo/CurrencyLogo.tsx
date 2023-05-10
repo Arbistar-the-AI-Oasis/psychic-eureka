@@ -1,4 +1,4 @@
-import { ChainId, Currency, currencyEquals, ETHER, Token } from '@uniswap/sdk';
+import { ChainId, Currency, currencyEquals, ETHER, Token } from '@arbistar/sdk';
 import { Currency as V3Currency, Token as V3Token } from '@uniswap/sdk-core';
 import React, { useMemo } from 'react';
 import { Box } from '@material-ui/core';

@@ -23,7 +23,7 @@ import {
 } from 'state/transactions/hooks';
 import { tryParseAmount } from 'state/swap/hooks';
 import 'pages/styles/convertQUICK.scss';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { OLD_QUICK } from 'constants/v3/addresses';
 import { getConfig } from 'config';
 import { useHistory } from 'react-router-dom';

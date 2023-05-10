@@ -1,4 +1,4 @@
-import { ChainId, Currency, ETHER, Token } from '@uniswap/sdk';
+import { ChainId, Currency, ETHER, Token } from '@arbistar/sdk';
 import React, {
   KeyboardEvent,
   RefObject,

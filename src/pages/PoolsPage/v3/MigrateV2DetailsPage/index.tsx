@@ -39,7 +39,7 @@ import useCurrentBlockTimestamp from 'hooks/useCurrentBlockTimestamp';
 import { PoolState, usePool } from 'hooks/v3/usePools';
 import { useTotalSupply } from 'hooks/v3/useTotalSupply';
 import { useV2Pair } from 'hooks/v3/useV2Pairs';
-import { JSBI } from '@uniswap/sdk';
+import { JSBI } from '@arbistar/sdk';
 import { FeeAmount, priceToClosestTick, TickMath, ZERO } from 'v3lib/utils';
 import { Bound } from 'state/mint/v3/actions';
 import { useUserSlippageTolerance } from 'state/user/hooks';

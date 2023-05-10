@@ -5,7 +5,7 @@ import { StakeQuickModal } from 'components';
 import { useNewLairInfo, useTotalRewardsDistributed } from 'state/stake/hooks';
 import { formatCompact, useLairDQUICKAPY } from 'utils';
 import { useTranslation } from 'react-i18next';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { useActiveWeb3React } from 'hooks';
 import { getConfig } from '../../config/index';
 import { useV3DistributedRewards } from 'hooks/v3/useV3DistributedRewards';

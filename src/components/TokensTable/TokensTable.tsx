@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Divider } from '@material-ui/core';
 import { getAddress } from '@ethersproject/address';
-import { ChainId, Token } from '@uniswap/sdk';
+import { ChainId, Token } from '@arbistar/sdk';
 import { CurrencyLogo, CustomTable } from 'components';
 import { GlobalConst } from 'constants/index';
 import {

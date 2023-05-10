@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk';
+import { Currency } from '@arbistar/sdk';
 import React from 'react';
 import { Box } from '@material-ui/core';
 import { CurrencyLogo } from 'components';

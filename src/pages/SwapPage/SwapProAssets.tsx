@@ -1,7 +1,7 @@
 import { getAddress } from '@ethersproject/address';
 import { Box, Divider, useMediaQuery, useTheme } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
-import { ChainId, Token } from '@uniswap/sdk';
+import { ChainId, Token } from '@arbistar/sdk';
 import { ReactComponent as SearchIcon } from 'assets/images/SearchIcon.svg';
 import { CurrencyLogo, CustomTable } from 'components';
 import { GlobalConst } from 'constants/index';

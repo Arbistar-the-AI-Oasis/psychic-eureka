@@ -9,7 +9,7 @@ import { WalletConnectPopup } from './WalletConnect';
 // import { UAuthConnector } from '@uauth/web3-react';
 // import { FortmaticConnector } from './Fortmatic';
 // import { ArkaneConnector } from './Arkane';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import MetamaskIcon from 'assets/images/metamask.png';
 import BlockWalletIcon from 'assets/images/blockwalletIcon.svg';
 import BraveWalletIcon from 'assets/images/braveWalletIcon.png';
@@ -81,17 +81,25 @@ export const networkInfoMap: NetworkInfoChainMap = {
     rpcUrl: 'https://rpc-mumbai.maticvigil.com/',
     scanUrl: 'https://mumbai.polygonscan.com/',
   },
-  [ChainId.DOEGCHAIN_TESTNET]: {
+  [ChainId.DOGE_TESTNET]: {
     rpcUrl: 'https://rpc-testnet.dogechain.dog',
     scanUrl: 'https://explorer-testnet.dogechain.dog/',
   },
   [ChainId.ZKTESTNET]: {
-    rpcUrl: 'https://rpc.public.zkevm-test.net',
-    scanUrl: 'https://testnet-zkevm.polygonscan.com/',
+    rpcUrl: 'https://rpc.public.ZK_EVM-test.net',
+    scanUrl: 'https://testnet-ZK_EVM.polygonscan.com/',
   },
-  [ChainId.ZKEVM]: {
-    rpcUrl: 'https://zkevm-rpc.com',
-    scanUrl: 'https://zkevm.polygonscan.com/',
+  [ChainId.ZK_EVM]: {
+    rpcUrl: 'https://ZK_EVM-rpc.com',
+    scanUrl: 'https://ZK_EVM.polygonscan.com/',
+  },
+  [ChainId.ARBITRUM]: {
+    rpcUrl: 'https://arb1.arbitrum.io/rpc',
+    scanUrl: 'https://arbiscan.io',
+  },
+  [ChainId.SEPOLIA]: {
+    rpcUrl: 'https://rpc.sepolia.org',
+    scanUrl: 'https://sepolia.etherscan.io',
   },
 };
 
@@ -105,7 +113,7 @@ export const NETWORK_CHAIN_ID: number = parseInt(
 
 const [web3Network, web3NetworkHooks] = initializeConnector<Network>(
   (actions) =>
-    new Network({ actions, urlMap: RPC_PROVIDERS, defaultChainId: 137 }),
+    new Network({ actions, urlMap: RPC_PROVIDERS, defaultChainId: 11155111 }),
 );
 
 export const networkConnection: Connection = {

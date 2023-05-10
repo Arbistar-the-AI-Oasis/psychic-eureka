@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Button } from '@material-ui/core';
-import { ChainId, TokenAmount } from '@uniswap/sdk';
+import { ChainId, TokenAmount } from '@arbistar/sdk';
 import { TransactionResponse } from '@ethersproject/providers';
 import { CustomModal, ColoredSlider, NumericalInput } from 'components';
 import { useDerivedSyrupInfo } from 'state/stake/hooks';

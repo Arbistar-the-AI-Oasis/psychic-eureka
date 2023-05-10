@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { Connector, Actions } from '@web3-react/types';
 import invariant from 'tiny-invariant';
 

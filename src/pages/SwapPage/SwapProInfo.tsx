@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Divider } from '@material-ui/core';
 import { SwapHoriz } from '@material-ui/icons';
-import { ChainId, Currency, Token } from '@uniswap/sdk';
+import { ChainId, Currency, Token } from '@arbistar/sdk';
 import { CurrencyLogo } from 'components';
 import { getTokenInfo, formatNumber } from 'utils';
 import { unwrappedToken } from 'utils/wrappedCurrency';

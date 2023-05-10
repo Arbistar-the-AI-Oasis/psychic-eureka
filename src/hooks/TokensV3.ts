@@ -8,7 +8,7 @@ import { isAddress } from '../utils';
 import { useActiveWeb3React } from 'hooks';
 import { useBytes32TokenContract, useTokenContract } from './useContract';
 import { useSelectedTokenList } from 'state/lists/hooks';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 
 // parse a name or symbol from a token response
 const BYTES32_REGEX = /^0x[a-fA-F0-9]{64}$/;

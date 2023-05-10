@@ -45,7 +45,7 @@ import {
   TransactionErrorContent,
 } from 'components';
 import { useTranslation } from 'react-i18next';
-import { WETH } from '@uniswap/sdk';
+import { WETH } from '@arbistar/sdk';
 
 interface PositionListItemProps {
   positionDetails: PositionPool;

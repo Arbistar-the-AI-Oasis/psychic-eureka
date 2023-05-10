@@ -1,12 +1,12 @@
 {
   "v3": true,
   "v2": false,
-  "rpc": "https://rpc.public.ZK_EVM-test.net",
-  "blockExplorer": "https://testnet-ZK_EVM.polygonscan.com",
-  "networkName": "Polygon ZK_EVM Testnet",
-  "chainId": 1442,
+  "rpc": "https://rpc.sepolia.org",
+  "blockExplorer": "https://sepolia.etherscan.io",
+  "networkName": "Sepolia Testnet",
+  "chainId": 11155111,
   "isMainnet": false,
-  "isOpened": false,
+  "isOpened": true,
   "nativeCurrencyImage": "/ETH.png",
   "nativeCurrency": {
     "name": "Ether",

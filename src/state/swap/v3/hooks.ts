@@ -38,7 +38,7 @@ import {
 } from 'state/user/hooks';
 import { WrappedTokenInfo } from 'state/lists/v3/wrappedTokenInfo';
 import { StableCoins } from 'constants/v3/addresses';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 
 export function useSwapState(): AppState['swapV3'] {
   return useAppSelector((state) => {

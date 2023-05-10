@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@uniswap/sdk';
+import { Trade, TradeType } from '@arbistar/sdk';
 import React, { useState } from 'react';
 import { Box } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';

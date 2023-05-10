@@ -1,5 +1,5 @@
 import invariant from 'tiny-invariant';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 // import { Arkane } from '@arkane-network/web3-arkane-provider';
 // import { ArkaneConnect, SecretType } from '@arkane-network/arkane-connect';
 // import Web3 from 'web3';

@@ -1,4 +1,4 @@
-import { ChainId, currencyEquals, ETHER } from '@uniswap/sdk';
+import { ChainId, currencyEquals, ETHER } from '@arbistar/sdk';
 import { useActiveWeb3React, useIsProMode } from 'hooks';
 import { useCallback } from 'react';
 import { useHistory } from 'react-router-dom';

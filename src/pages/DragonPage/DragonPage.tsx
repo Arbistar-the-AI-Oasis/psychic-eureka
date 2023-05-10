@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 import AdsSlider from 'components/AdsSlider';
 import { getConfig } from 'config';
 import { useActiveWeb3React } from 'hooks';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { useHistory } from 'react-router-dom';
 import { DLDQUICK, DLQUICK } from 'constants/v3/addresses';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pair } from '@uniswap/v2-sdk';
-import { ETHER } from '@uniswap/sdk';
+import { ETHER } from '@arbistar/sdk';
 import { Currency, CurrencyAmount, Percent, Token } from '@uniswap/sdk-core';
 import { ReactNode, useCallback, useMemo, useState } from 'react';
 import { LockOutlined } from '@material-ui/icons';

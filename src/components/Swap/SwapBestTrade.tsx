@@ -7,7 +7,7 @@ import {
   ETHER,
   Fraction,
   ChainId,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 import { Currency, CurrencyAmount, NativeCurrency } from '@uniswap/sdk-core';
 import ReactGA from 'react-ga';
 import { ArrowDown } from 'react-feather';

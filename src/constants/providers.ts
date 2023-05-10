@@ -3,15 +3,17 @@ import { StaticJsonRpcProvider } from '@ethersproject/providers';
 import { isPlain } from '@reduxjs/toolkit';
 
 import { AVERAGE_L1_BLOCK_TIME, CHAIN_IDS_TO_NAMES } from './index';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 
 export const rpcMap = {
   [ChainId.MATIC]: 'https://polygon-rpc.com/',
   [ChainId.MUMBAI]: 'https://rpc-mumbai.maticvigil.com/',
   [ChainId.DOGECHAIN]: 'https://rpc-sg.dogechain.dog/',
-  [ChainId.DOEGCHAIN_TESTNET]: 'https://rpc-testnet.dogechain.dog',
-  [ChainId.ZKTESTNET]: 'https://rpc.public.zkevm-test.net',
-  [ChainId.ZKEVM]: 'https://zkevm-rpc.com',
+  [ChainId.DOGE_TESTNET]: 'https://rpc-testnet.dogechain.dog',
+  [ChainId.ZKTESTNET]: 'https://rpc.public.ZK_EVM-test.net',
+  [ChainId.ZK_EVM]: 'https://ZK_EVM-rpc.com',
+  [ChainId.ARBITRUM]: 'https://arb1.arbitrum.io/rpc',
+  [ChainId.SEPOLIA]: 'https://rpc.sepolia.org',
 };
 
 class AppJsonRpcProvider extends StaticJsonRpcProvider {
@@ -65,9 +67,9 @@ export const RPC_PROVIDERS: {
   [ChainId.MATIC]: new AppJsonRpcProvider(ChainId.MATIC),
   [ChainId.MUMBAI]: new AppJsonRpcProvider(ChainId.MUMBAI),
   [ChainId.DOGECHAIN]: new AppJsonRpcProvider(ChainId.DOGECHAIN),
-  [ChainId.DOEGCHAIN_TESTNET]: new AppJsonRpcProvider(
-    ChainId.DOEGCHAIN_TESTNET,
-  ),
-  [ChainId.ZKEVM]: new AppJsonRpcProvider(ChainId.ZKEVM),
+  [ChainId.DOGE_TESTNET]: new AppJsonRpcProvider(ChainId.DOGE_TESTNET),
+  [ChainId.ZK_EVM]: new AppJsonRpcProvider(ChainId.ZK_EVM),
   [ChainId.ZKTESTNET]: new AppJsonRpcProvider(ChainId.ZKTESTNET),
+  [ChainId.ARBITRUM]: new AppJsonRpcProvider(ChainId.ZK_EVM),
+  [ChainId.SEPOLIA]: new AppJsonRpcProvider(ChainId.ZKTESTNET),
 };

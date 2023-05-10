@@ -5,7 +5,7 @@ import {
   TokenAmount,
   Pair,
   ChainId,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 import dayjs from 'dayjs';
 import { useMemo, useEffect, useState } from 'react';
 import { usePairs } from 'data/Reserves';

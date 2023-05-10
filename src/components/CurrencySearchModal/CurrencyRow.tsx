@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, ETHER, Token } from '@uniswap/sdk';
+import { ChainId, CurrencyAmount, ETHER, Token } from '@arbistar/sdk';
 import { Currency as V3Currency } from '@uniswap/sdk-core';
 import React from 'react';
 import { Box, Tooltip, CircularProgress, ListItem } from '@material-ui/core';

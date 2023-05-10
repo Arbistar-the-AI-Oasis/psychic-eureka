@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { getConfig } from 'config';
 
 const getAPIURL = (chainId: ChainId, url: string) => {

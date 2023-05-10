@@ -1,4 +1,4 @@
-import { Currency, Fraction, Trade, TradeType } from '@uniswap/sdk';
+import { Currency, Fraction, Trade, TradeType } from '@arbistar/sdk';
 import React, { useMemo } from 'react';
 import { AlertTriangle } from 'react-feather';
 import { Box, Button } from '@material-ui/core';

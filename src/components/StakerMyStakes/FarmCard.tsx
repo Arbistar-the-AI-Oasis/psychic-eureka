@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Box, useMediaQuery, useTheme } from '@material-ui/core';
 import { CurrencyLogo, DoubleCurrencyLogo } from 'components';
-import { ChainId, Token } from '@uniswap/sdk';
+import { ChainId, Token } from '@arbistar/sdk';
 import { useActiveWeb3React } from 'hooks';
 import { formatNumber, getTokenFromAddress } from 'utils';
 import { useSelectedTokenList } from 'state/lists/hooks';

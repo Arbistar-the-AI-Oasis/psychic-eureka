@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@uniswap/sdk';
+import { ChainId, Token } from '@arbistar/sdk';
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists';
 import { GlobalConst } from 'constants/index';
 import { useMemo } from 'react';
@@ -53,9 +53,11 @@ const EMPTY_LIST: TokenAddressMap = {
   [ChainId.MUMBAI]: {},
   [ChainId.MATIC]: {},
   [ChainId.DOGECHAIN]: {},
-  [ChainId.DOEGCHAIN_TESTNET]: {},
+  [ChainId.DOGE_TESTNET]: {},
   [ChainId.ZKTESTNET]: {},
-  [ChainId.ZKEVM]: {},
+  [ChainId.ZK_EVM]: {},
+  [ChainId.ARBITRUM]: {},
+  [ChainId.SEPOLIA]: {},
 };
 
 const listCache: WeakMap<TokenList, TokenAddressMap> | null =

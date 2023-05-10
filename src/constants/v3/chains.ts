@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 
 export const L1_CHAIN_IDS = [] as const;
 
@@ -49,18 +49,36 @@ export const CHAIN_INFO: ChainInfo = {
   },
   [ChainId.ZKTESTNET]: {
     docs: 'https://algebra.finance/',
-    explorer: 'https://testnet-zkevm.polygonscan.com',
+    explorer: 'https://testnet-ZK_EVM.polygonscan.com',
     infoLink: 'https://algebra.finance',
     label: 'ZKTESTNET',
     nativeCurrencySymbol: 'ETH',
     nativeCurrencyName: 'Ether',
     nativeCurrencyDecimals: 18,
   },
-  [ChainId.ZKEVM]: {
+  [ChainId.ZK_EVM]: {
     docs: 'https://algebra.finance/',
-    explorer: 'https://zkevm.polygonscan.com',
+    explorer: 'https://ZK_EVM.polygonscan.com',
     infoLink: 'https://algebra.finance',
-    label: 'ZKEVM',
+    label: 'ZK_EVM',
+    nativeCurrencySymbol: 'ETH',
+    nativeCurrencyName: 'Ether',
+    nativeCurrencyDecimals: 18,
+  },
+  [ChainId.ARBITRUM]: {
+    docs: 'https://algebra.finance/',
+    explorer: 'https://arbiscan.io',
+    infoLink: 'https://algebra.finance',
+    label: 'ARBITRUM',
+    nativeCurrencySymbol: 'ETH',
+    nativeCurrencyName: 'Ether',
+    nativeCurrencyDecimals: 18,
+  },
+  [ChainId.SEPOLIA]: {
+    docs: 'https://algebra.finance/',
+    explorer: 'https://sepolia.etherscan.io',
+    infoLink: 'https://algebra.finance',
+    label: 'SEPOLIA',
     nativeCurrencySymbol: 'ETH',
     nativeCurrencyName: 'Ether',
     nativeCurrencyDecimals: 18,

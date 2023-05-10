@@ -6,7 +6,7 @@ import {
   CurrencyAmount,
   ChainId,
   WETH,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 import React, { useMemo, useCallback } from 'react';
 import { Virtuoso } from 'react-virtuoso';
 import { useIsV2 } from 'state/application/hooks';

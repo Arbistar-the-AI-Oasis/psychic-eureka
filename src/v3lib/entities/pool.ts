@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { BigintIsh, CurrencyAmount, Price, Token } from '@uniswap/sdk-core';
 import { POOL_DEPLOYER_ADDRESS } from 'constants/v3/addresses';
 import JSBI from 'jsbi';

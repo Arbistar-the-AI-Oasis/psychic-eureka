@@ -37,7 +37,7 @@ import dayjs from 'dayjs';
 import { fetchEternalFarmAPR, fetchPoolsAPR } from './api';
 import { Token } from '@uniswap/sdk-core';
 import { TickMath, tickToPrice } from '@uniswap/v3-sdk';
-import { ChainId, JSBI } from '@uniswap/sdk';
+import { ChainId, JSBI } from '@arbistar/sdk';
 import keyBy from 'lodash.keyby';
 import { GlobalConst, TxnType } from 'constants/index';
 import {

@@ -4,7 +4,7 @@ import utc from 'dayjs/plugin/utc';
 import weekOfYear from 'dayjs/plugin/weekOfYear';
 import { SWAP_TRANSACTIONS_V3 } from 'apollo/queries-v3';
 import { clientV3 } from 'apollo/client';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 dayjs.extend(utc);
 dayjs.extend(weekOfYear);
 

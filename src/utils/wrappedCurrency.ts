@@ -6,7 +6,7 @@ import {
   Token,
   TokenAmount,
   WETH,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 
 import {
   Currency as CurrencyV3,

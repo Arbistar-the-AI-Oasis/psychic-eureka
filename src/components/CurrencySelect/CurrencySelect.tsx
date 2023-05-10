@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { Currency } from '@uniswap/sdk';
+import { Currency } from '@arbistar/sdk';
 import { Box } from '@material-ui/core';
 import { CurrencySearchModal, CurrencyLogo } from 'components';
 import 'components/styles/CurrencyInput.scss';

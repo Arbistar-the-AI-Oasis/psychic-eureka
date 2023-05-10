@@ -1,4 +1,4 @@
-import { Currency, Fraction, Percent } from '@uniswap/sdk';
+import { Currency, Fraction, Percent } from '@arbistar/sdk';
 import React, { useState } from 'react';
 import { Box } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';

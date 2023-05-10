@@ -9,7 +9,7 @@ import { Pair } from 'utils/v3/computePairAddress';
 import { useTokenBalance } from 'state/wallet/v3/hooks';
 import { useActiveWeb3React } from 'hooks';
 import { useTotalSupply } from 'hooks/v3/useTotalSupply';
-import { JSBI } from '@uniswap/sdk';
+import { JSBI } from '@arbistar/sdk';
 import { CurrencyAmount } from '@uniswap/sdk-core';
 import { useToken } from 'hooks/TokensV3';
 import useTransactionDeadline from 'hooks/useTransactionDeadline';

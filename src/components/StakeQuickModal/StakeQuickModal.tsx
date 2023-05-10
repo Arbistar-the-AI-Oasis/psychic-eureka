@@ -16,7 +16,7 @@ import { calculateGasMargin, formatTokenAmount } from 'utils';
 import 'components/styles/StakeModal.scss';
 import { useTranslation } from 'react-i18next';
 import { DLQUICK, OLD_QUICK } from 'constants/v3/addresses';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 
 interface StakeQuickModalProps {
   open: boolean;

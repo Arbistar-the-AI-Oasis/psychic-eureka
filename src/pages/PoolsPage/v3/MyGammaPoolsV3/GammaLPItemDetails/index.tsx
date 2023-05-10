@@ -9,7 +9,7 @@ import { Button } from '@material-ui/core';
 import useUSDCPrice from 'hooks/v3/useUSDCPrice';
 import IncreaseGammaLiquidityModal from '../IncreaseGammaLiquidityModal';
 import WithdrawGammaLiquidityModal from '../WithdrawGammaLiquidityModal';
-import { JSBI, Token } from '@uniswap/sdk';
+import { JSBI, Token } from '@arbistar/sdk';
 import { useActiveWeb3React } from 'hooks';
 import { useTokenBalance } from 'state/wallet/hooks';
 

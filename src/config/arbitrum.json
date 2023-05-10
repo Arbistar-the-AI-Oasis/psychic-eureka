@@ -1,13 +1,14 @@
 {
   "v3": true,
   "v2": false,
-  "rpc": "https://rpc.public.ZK_EVM-test.net",
-  "blockExplorer": "https://testnet-ZK_EVM.polygonscan.com",
-  "networkName": "Polygon ZK_EVM Testnet",
-  "chainId": 1442,
-  "isMainnet": false,
+  "rpc": "https://arb1.arbitrum.io/rpc",
+  "blockExplorer": "https://arbiscan.io",
+  "networkName": "Arbitrum One",
+  "aprAPINetwork": "arbitrum",
+  "chainId": 42161,
+  "isMainnet": true,
   "isOpened": false,
-  "nativeCurrencyImage": "/ETH.png",
+  "nativeCurrencyImage": "/ARB.png",
   "nativeCurrency": {
     "name": "Ether",
     "symbol": "ETH",
@@ -24,7 +25,7 @@
     "available": true
   },
   "farm": {
-    "available": false
+    "available": true
   },
   "lair": {
     "available": false,
@@ -39,7 +40,7 @@
     "available": false
   },
   "analytics": {
-    "available": false
+    "available": true
   },
   "lending": {
     "available": false
@@ -51,7 +52,7 @@
     "available": false
   },
   "leaderboard": {
-    "available": false
+    "available": true
   },
   "safe": {
     "available": false

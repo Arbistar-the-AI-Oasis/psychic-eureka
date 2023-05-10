@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box } from '@material-ui/core';
 import { ChevronDown, ChevronUp } from 'react-feather';
-import { Pair } from '@uniswap/sdk';
+import { Pair } from '@arbistar/sdk';
 import { unwrappedToken } from 'utils/wrappedCurrency';
 import { DoubleCurrencyLogo } from 'components';
 import V2PositionCardDetails from '../V2PositionCardDetails';

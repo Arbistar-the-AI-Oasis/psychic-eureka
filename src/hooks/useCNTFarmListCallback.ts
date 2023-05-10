@@ -1,5 +1,5 @@
 import { nanoid } from '@reduxjs/toolkit';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { useActiveWeb3React } from 'hooks';
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';

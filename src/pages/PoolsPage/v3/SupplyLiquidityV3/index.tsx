@@ -41,7 +41,7 @@ import { ReactComponent as SettingsIcon } from 'assets/images/SettingsIcon.svg';
 import { useAppDispatch } from 'state/hooks';
 import usePoolsRedirect from 'hooks/usePoolsRedirect';
 import { CHAIN_INFO } from 'constants/v3/chains';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { useTranslation } from 'react-i18next';
 import { GlobalConst } from 'constants/index';
 
@@ -87,7 +87,7 @@ export function SupplyLiquidityV3() {
 
   const dispatch = useAppDispatch();
 
-  const feeAmount = 100;
+  const feeAmount = parseInt('100');
 
   const expertMode = useIsExpertMode();
 
@@ -148,13 +148,16 @@ export function SupplyLiquidityV3() {
       if (chainId === ChainId.MATIC || chainId === ChainId.MUMBAI) {
         chainSymbol = 'MATIC';
       }
-      if (
-        chainId === ChainId.DOGECHAIN ||
-        chainId === ChainId.DOEGCHAIN_TESTNET
-      ) {
+      if (chainId === ChainId.DOGECHAIN || chainId === ChainId.DOGE_TESTNET) {
         chainSymbol = 'WDOGE';
       }
       if (chainId === ChainId.ZKTESTNET) {
+        chainSymbol = 'ETH';
+      }
+      if (chainId === ChainId.ARBITRUM) {
+        chainSymbol = 'ETH';
+      }
+      if (chainId === ChainId.SEPOLIA) {
         chainSymbol = 'ETH';
       }
 

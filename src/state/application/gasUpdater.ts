@@ -3,7 +3,7 @@ import { useGasPrice } from '../../hooks/useGasPrice';
 import { useActiveWeb3React } from 'hooks';
 
 import { updateGasPrice } from './actions';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { useAppDispatch, useAppSelector } from 'state';
 
 export default function GasUpdater(): null {

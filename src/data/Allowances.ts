@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@uniswap/sdk';
+import { Token, TokenAmount } from '@arbistar/sdk';
 import { Token as TokenV3, CurrencyAmount } from '@uniswap/sdk-core';
 import { useMemo } from 'react';
 

@@ -2,7 +2,7 @@ import {
   TransactionResponse,
   TransactionRequest,
 } from '@ethersproject/providers';
-import { Currency } from '@uniswap/sdk';
+import { Currency } from '@arbistar/sdk';
 import { useMemo } from 'react';
 import { SWAP_ROUTER_ADDRESS } from 'constants/v3/addresses';
 import { RouterTypes, SmartRouter } from 'constants/index';

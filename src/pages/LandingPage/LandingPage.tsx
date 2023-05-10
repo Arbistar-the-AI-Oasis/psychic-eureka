@@ -130,7 +130,7 @@ const LandingPage: React.FC = () => {
 
   return (
     <div id='landing-page' style={{ width: '100%' }}>
-      <GlobalSection />
+      {/* <GlobalSection /> */}
       <Box className='smallCommunityContainer'>
         {socialicons.map((val, ind) => (
           <Box

@@ -22,7 +22,7 @@ import { GammaPairs, GlobalConst } from 'constants/index';
 import { Box, ButtonGroup, Button } from '@material-ui/core';
 import { ReportProblemOutlined } from '@material-ui/icons';
 import { useActiveWeb3React } from 'hooks';
-import { ChainId, JSBI } from '@uniswap/sdk';
+import { ChainId, JSBI } from '@arbistar/sdk';
 import { StableCoins } from 'constants/v3/addresses';
 import { getEternalFarmFromTokens } from 'utils';
 import GammaLogo from 'assets/images/gammaLogo.png';

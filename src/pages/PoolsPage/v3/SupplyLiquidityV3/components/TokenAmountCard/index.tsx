@@ -16,7 +16,7 @@ import './index.scss';
 import { Box } from '@material-ui/core';
 import { LockOutlined } from '@material-ui/icons';
 import NumericalInput from 'components/NumericalInput';
-import { ChainId, ETHER, WETH } from '@uniswap/sdk';
+import { ChainId, ETHER, WETH } from '@arbistar/sdk';
 import { useTranslation } from 'react-i18next';
 import { useV3MintState } from 'state/mint/v3/hooks';
 import { GlobalConst } from 'constants/index';

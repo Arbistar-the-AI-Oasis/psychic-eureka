@@ -1,4 +1,4 @@
-import { ChainId, Currency, ETHER } from '@uniswap/sdk';
+import { ChainId, Currency, ETHER } from '@arbistar/sdk';
 import React, { useCallback, useEffect, useState } from 'react';
 import ReactGA from 'react-ga';
 import { CustomModal } from 'components';

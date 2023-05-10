@@ -9,7 +9,7 @@ import {
   Token,
   TokenAmount,
   Trade,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 import { ParsedQs } from 'qs';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';

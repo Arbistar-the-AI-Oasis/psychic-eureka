@@ -18,7 +18,7 @@ import {
 import CurrencyInputPanel from 'components/v3/CurrencyInputPanel';
 import '../GammaLPItemDetails/index.scss';
 import { useTokenBalance } from 'state/wallet/v3/hooks';
-import { ETHER, JSBI, WETH } from '@uniswap/sdk';
+import { ETHER, JSBI, WETH } from '@arbistar/sdk';
 import { formatUnits, parseUnits } from 'ethers/lib/utils';
 import { useGammaUNIProxyContract, useWETHContract } from 'hooks/useContract';
 import { TransactionResponse } from '@ethersproject/abstract-provider';

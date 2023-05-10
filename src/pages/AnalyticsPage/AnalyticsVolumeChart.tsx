@@ -15,7 +15,7 @@ import { BarChart, ChartType } from 'components';
 import { GlobalConst, GlobalData } from 'constants/index';
 import { useTranslation } from 'react-i18next';
 import { useActiveWeb3React, useAnalyticsVersion } from 'hooks';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { getChartDataTotal, getChartDataV3 } from 'utils/v3-graph';
 
 const DAY_VOLUME = 0;

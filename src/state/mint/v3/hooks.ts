@@ -45,7 +45,7 @@ import {
   useSingleCallResult,
   useSingleContractMultipleData,
 } from 'state/multicall/v3/hooks';
-import { ETHER, WETH } from '@uniswap/sdk';
+import { ETHER, WETH } from '@arbistar/sdk';
 import { maxAmountSpend } from 'utils';
 import { GammaPairs } from 'constants/index';
 

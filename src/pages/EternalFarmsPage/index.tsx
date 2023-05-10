@@ -13,7 +13,7 @@ import { useFarmingSubgraph } from 'hooks/useIncentiveSubgraph';
 import { GlobalConst, GlobalData } from 'constants/index';
 import { formatUnits } from 'ethers/lib/utils';
 import useParsedQueryString from 'hooks/useParsedQueryString';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { useUSDCPricesFromAddresses } from 'utils/useUSDCPrice';
 
 const EternalFarmsPage: React.FC<{

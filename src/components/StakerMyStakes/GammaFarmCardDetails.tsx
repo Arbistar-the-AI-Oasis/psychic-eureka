@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
 import { CurrencyLogo, NumericalInput } from 'components';
-import { Token } from '@uniswap/sdk';
+import { Token } from '@arbistar/sdk';
 import { useActiveWeb3React } from 'hooks';
 import { useSelectedTokenList } from 'state/lists/hooks';
 import { calculateGasMargin, formatNumber, getTokenFromAddress } from 'utils';

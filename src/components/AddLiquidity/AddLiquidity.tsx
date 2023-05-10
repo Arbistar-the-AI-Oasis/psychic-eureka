@@ -21,7 +21,7 @@ import {
   ETHER,
   TokenAmount,
   ChainId,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 import { useActiveWeb3React } from 'hooks';
 import { useRouterContract } from 'hooks/useContract';
 import useTransactionDeadline from 'hooks/useTransactionDeadline';

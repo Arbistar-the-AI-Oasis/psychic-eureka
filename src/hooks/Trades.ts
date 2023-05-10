@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Pair, Token, Trade } from '@uniswap/sdk';
+import { Currency, CurrencyAmount, Pair, Token, Trade } from '@arbistar/sdk';
 import {
   V2_BASES_TO_CHECK_TRADES_AGAINST,
   V2_CUSTOM_BASES,

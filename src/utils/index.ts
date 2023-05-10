@@ -49,7 +49,7 @@ import {
   Token,
   TokenAmount,
   Pair,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 import {
   CurrencyAmount as CurrencyAmountV3,
   Currency as CurrencyV3,

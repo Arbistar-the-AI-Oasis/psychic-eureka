@@ -14,7 +14,7 @@ import GammaFarmCard from './GammaFarmCard';
 import { getGammaData, getGammaRewards, getTokenFromAddress } from 'utils';
 import { useActiveWeb3React } from 'hooks';
 import { useSelectedTokenList } from 'state/lists/hooks';
-import { Token } from '@uniswap/sdk';
+import { Token } from '@arbistar/sdk';
 import { GAMMA_MASTERCHEF_ADDRESSES } from 'constants/v3/addresses';
 import { useUSDCPricesFromAddresses } from 'utils/useUSDCPrice';
 import useParsedQueryString from 'hooks/useParsedQueryString';

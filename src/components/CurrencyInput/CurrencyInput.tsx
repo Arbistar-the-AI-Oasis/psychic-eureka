@@ -1,5 +1,5 @@
 import React from 'react';
-import { Currency, ETHER, currencyEquals } from '@uniswap/sdk';
+import { Currency, ETHER, currencyEquals } from '@arbistar/sdk';
 import { NativeCurrency } from '@uniswap/sdk-core';
 import { WrappedTokenInfo } from 'state/lists/v3/wrappedTokenInfo';
 import { TokenInfo } from '@uniswap/token-lists';

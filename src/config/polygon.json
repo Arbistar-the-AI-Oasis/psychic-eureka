@@ -5,6 +5,7 @@
   "blockExplorer": "https://polygonscan.com",
   "chainId": 137,
   "isMainnet": true,
+  "isOpened": false,
   "networkName": "Polygon",
   "nativeCurrencyImage": "/polygon.svg",
   "nativeCurrency": {

@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import { Box, Button } from '@material-ui/core';
-import { Token as V2Token } from '@uniswap/sdk';
+import { Token as V2Token } from '@arbistar/sdk';
 import { Token } from '@uniswap/sdk-core';
 import { CustomModal, CurrencyLogo } from 'components';
 import { ReportProblemOutlined } from '@material-ui/icons';

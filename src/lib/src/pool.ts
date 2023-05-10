@@ -10,7 +10,7 @@ import { Tick, TickConstructorArgs } from './tick';
 import { NoTickDataProvider, TickDataProvider } from './tickDataProvider';
 import { TickListDataProvider } from './tickListDataProvider';
 import { POOL_DEPLOYER_ADDRESS } from 'constants/v3/addresses';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { computePoolAddress } from 'hooks/v3/computePoolAddress';
 
 interface StepComputations {

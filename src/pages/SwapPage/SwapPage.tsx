@@ -1,5 +1,5 @@
 import { Box, useMediaQuery, useTheme } from '@material-ui/core';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { SettingsModal } from 'components';
 import AdsSlider from 'components/AdsSlider';
 import { useActiveWeb3React, useIsProMode } from 'hooks';

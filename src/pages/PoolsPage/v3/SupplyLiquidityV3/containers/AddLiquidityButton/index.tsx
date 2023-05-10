@@ -24,7 +24,7 @@ import { ApprovalState, useApproveCallback } from 'hooks/useV3ApproveCallback';
 import { Field } from 'state/mint/actions';
 import { Bound, setAddLiquidityTxHash } from 'state/mint/v3/actions';
 import { useIsNetworkFailedImmediate } from 'hooks/v3/useIsNetworkFailed';
-import { JSBI, WETH } from '@uniswap/sdk';
+import { JSBI, WETH } from '@arbistar/sdk';
 import { NONFUNGIBLE_POSITION_MANAGER_ADDRESSES } from 'constants/v3/addresses';
 import { calculateGasMargin, calculateGasMarginV3 } from 'utils';
 import { Button, Box } from '@material-ui/core';

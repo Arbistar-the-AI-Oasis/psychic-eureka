@@ -7,7 +7,7 @@ import { formatTokenAmount, useLairDQUICKAPY } from 'utils';
 import { useUSDCPriceFromAddress } from 'utils/useUSDCPrice';
 import { useTranslation } from 'react-i18next';
 import { useActiveWeb3React } from 'hooks';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import {
   DLDQUICK,
   DLQUICK,

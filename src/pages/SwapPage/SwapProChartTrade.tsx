@@ -1,6 +1,6 @@
 import React from 'react';
 import SwapProChart from './SwapProChart';
-import { ChainId, Token } from '@uniswap/sdk';
+import { ChainId, Token } from '@arbistar/sdk';
 import { Box } from '@material-ui/core';
 import { Height } from '@material-ui/icons';
 import { ReflexContainer, ReflexSplitter, ReflexElement } from 'react-reflex';

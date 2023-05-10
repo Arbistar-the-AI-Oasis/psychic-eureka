@@ -3,7 +3,7 @@ import './index.scss';
 import { useTranslation } from 'react-i18next';
 import { useActivePreset } from 'state/mint/v3/hooks';
 import { Currency, CurrencyAmount } from '@uniswap/sdk-core';
-import { JSBI, WETH } from '@uniswap/sdk';
+import { JSBI, WETH } from '@arbistar/sdk';
 import { useActiveWeb3React } from 'hooks';
 import { GammaPairs } from 'constants/index';
 import { Box, Button } from '@material-ui/core';

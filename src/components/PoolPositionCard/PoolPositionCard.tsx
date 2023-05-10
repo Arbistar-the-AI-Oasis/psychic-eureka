@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Box } from '@material-ui/core';
 import { ChevronDown, ChevronUp } from 'react-feather';
-import { ChainId, Pair } from '@uniswap/sdk';
+import { ChainId, Pair } from '@arbistar/sdk';
 import { unwrappedToken } from 'utils/wrappedCurrency';
 import {
   useStakingInfo,

@@ -49,7 +49,7 @@ import {
 } from 'utils/api';
 import { useSelectedTokenList } from 'state/lists/v3/hooks';
 import { getV3TokenFromAddress } from 'utils';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { formatTokenSymbol } from 'utils/v3-graph';
 
 export function useFarmingSubgraph() {

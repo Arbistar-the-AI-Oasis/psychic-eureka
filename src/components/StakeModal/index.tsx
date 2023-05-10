@@ -20,7 +20,7 @@ import { useActiveWeb3React } from 'hooks';
 import { Token } from '@uniswap/sdk-core';
 import { formatUnits } from 'ethers/lib/utils';
 import { BigNumber } from 'ethers';
-import { ChainId } from '@uniswap/sdk';
+import { ChainId } from '@arbistar/sdk';
 import { Box, Button } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
 import { Check } from '@material-ui/icons';

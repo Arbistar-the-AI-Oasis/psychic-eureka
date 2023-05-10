@@ -6,7 +6,7 @@ import {
   WETH,
   Token,
   Trade,
-} from '@uniswap/sdk';
+} from '@arbistar/sdk';
 import { useEffect, useMemo, useState } from 'react';
 import { PairState, usePairs, usePair } from 'data/Reserves';
 import { useActiveWeb3React } from 'hooks';

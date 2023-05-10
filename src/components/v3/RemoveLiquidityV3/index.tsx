@@ -35,7 +35,7 @@ import { WrappedCurrency } from 'models/types';
 import RangeBadge from 'components/v3/Badge/RangeBadge';
 import DoubleCurrencyLogo from 'components/DoubleCurrencyLogo';
 import ColoredSlider from 'components/ColoredSlider';
-import { JSBI, WETH } from '@uniswap/sdk';
+import { JSBI, WETH } from '@arbistar/sdk';
 import { useUserSlippageTolerance } from 'state/user/hooks';
 import './index.scss';
 

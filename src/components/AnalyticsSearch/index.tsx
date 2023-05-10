@@ -11,7 +11,7 @@ import {
 } from 'utils';
 import { GlobalConst } from 'constants/index';
 import { CurrencyLogo, DoubleCurrencyLogo } from 'components';
-import { ChainId, Token } from '@uniswap/sdk';
+import { ChainId, Token } from '@arbistar/sdk';
 import { getAddress } from '@ethersproject/address';
 import 'components/styles/SearchWidget.scss';
 import { useTranslation } from 'react-i18next';

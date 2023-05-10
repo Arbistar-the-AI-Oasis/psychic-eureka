@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useHistory, useRouteMatch, Link, useParams } from 'react-router-dom';
 import { Box, Grid } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
-import { Token } from '@uniswap/sdk';
+import { Token } from '@arbistar/sdk';
 import {
   shortenAddress,
   getEtherscanLink,
