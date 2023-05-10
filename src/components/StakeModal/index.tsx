@@ -68,7 +68,7 @@ export function FarmModal({
   farmingType,
 }: FarmModalProps) {
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
   const { t } = useTranslation();
 
   const isTierFarming = useMemo(

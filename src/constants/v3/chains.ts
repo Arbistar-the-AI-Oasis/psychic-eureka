@@ -49,7 +49,7 @@ export const CHAIN_INFO: ChainInfo = {
   },
   [ChainId.ZKTESTNET]: {
     docs: 'https://algebra.finance/',
-    explorer: 'https://testnet-ZK_EVM.polygonscan.com',
+    explorer: 'https://testnet-zkevm.polygonscan.com',
     infoLink: 'https://algebra.finance',
     label: 'ZKTESTNET',
     nativeCurrencySymbol: 'ETH',
@@ -58,9 +58,9 @@ export const CHAIN_INFO: ChainInfo = {
   },
   [ChainId.ZK_EVM]: {
     docs: 'https://algebra.finance/',
-    explorer: 'https://ZK_EVM.polygonscan.com',
+    explorer: 'https://zkevm.polygonscan.com',
     infoLink: 'https://algebra.finance',
-    label: 'ZK_EVM',
+    label: 'ZKEVM',
     nativeCurrencySymbol: 'ETH',
     nativeCurrencyName: 'Ether',
     nativeCurrencyDecimals: 18,

@@ -6,7 +6,6 @@
   "aprAPINetwork": "DogeChain",
   "networkName": "DogeChain",
   "isMainnet": true,
-  "isOpened": false,
   "chainId": 2000,
   "nativeCurrencyImage": "/doge.png",
   "nativeCurrency": {

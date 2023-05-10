@@ -32,7 +32,7 @@ const SwapProMain: React.FC<SwapProMainProps> = ({
   pairTokenReversed,
 }) => {
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
   const { isV2 } = useIsV2();
   const [transactions, setTransactions] = useState<any[] | undefined>(
     undefined,

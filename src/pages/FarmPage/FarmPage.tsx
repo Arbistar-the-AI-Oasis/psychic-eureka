@@ -30,7 +30,7 @@ const FarmPage: React.FC = () => {
       : GlobalConst.v2FarmTab.LPFARM;
   const { t } = useTranslation();
   const [bulkPairs, setBulkPairs] = useState<any>(null);
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
   const config = getConfig(chainIdToUse);
   const farmAvailable = config['farm']['available'];
   const v3 = config['v3'];

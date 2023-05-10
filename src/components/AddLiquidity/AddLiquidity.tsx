@@ -64,7 +64,7 @@ const AddLiquidity: React.FC<{
 
   const isSupportedNetwork = useIsSupportedNetwork();
   const { account, chainId, library } = useActiveWeb3React();
-  const chainIdToUse = chainId ? chainId : ChainId.SEPOLIA;
+  const chainIdToUse = chainId ? chainId : ChainId.MATIC;
   const nativeCurrency = Token.ETHER[chainIdToUse];
 
   const [showConfirm, setShowConfirm] = useState(false);

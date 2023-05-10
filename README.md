@@ -43,11 +43,11 @@ To all the Ethereum and Polygon community
 
 ### Chain RPC
 
-"rpc": "https://arb1.arbitrum.io/rpc",
-"blockExplorer": "https://arbiscan.io",
+"rpcUrl": "https://arb1.arbitrum.io/rpc",
+"scanUrl": "https://arbiscan.io",
 
-"rpc": "https://rpc.sepolia.org",
-"blockExplorer": "https://sepolia.etherscan.io",
+"rpcUrl": "https://rpc.sepolia.org",
+"scanUrl": "https://sepolia.etherscan.io",
 
 ### Deploy Data
 

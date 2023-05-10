@@ -20,12 +20,7 @@ import { useTranslation } from 'react-i18next';
 import Option from './Option';
 import PendingView from './PendingView';
 import 'components/styles/WalletModal.scss';
-import {
-  Connection,
-  coinbaseWalletConnection,
-  getConnections,
-  injectedConnection,
-} from 'connectors';
+import { Connection, getConnections, injectedConnection } from 'connectors';
 import { getIsMetaMaskWallet } from 'connectors/utils';
 import { useSelectedWallet } from 'state/user/hooks';
 
@@ -294,12 +289,7 @@ const WalletModal: React.FC<WalletModalProps> = ({
               installLink={option.installLink}
             />
           );
-        } else if (
-          ethereum &&
-          (option.mobile ||
-            (isCoinbaseWallet &&
-              option.connector === coinbaseWalletConnection.connector))
-        ) {
+        } else if (ethereum && (option.mobile || isCoinbaseWallet)) {
           return (
             <Option
               onClick={() => {

@@ -33,7 +33,7 @@ const CurrencySearchModal: React.FC<CurrencySearchModalProps> = ({
   const [listView, setListView] = useState<boolean>(false);
   const lastOpen = useLast(isOpen);
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ? chainId : ChainId.SEPOLIA;
+  const chainIdToUse = chainId ? chainId : ChainId.MATIC;
   const nativeCurrency = ETHER[chainIdToUse];
   useEffect(() => {
     if (isOpen && !lastOpen) {

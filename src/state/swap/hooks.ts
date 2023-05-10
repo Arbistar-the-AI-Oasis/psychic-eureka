@@ -181,7 +181,7 @@ export function useDerivedSwapInfo(): {
   v1Trade: Trade | undefined;
 } {
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
   const parsedQuery = useParsedQueryString();
   const swapType = parsedQuery ? parsedQuery.swapIndex : undefined;
 

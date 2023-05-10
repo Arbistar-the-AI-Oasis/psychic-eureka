@@ -51,7 +51,7 @@ const CurrencySearch: React.FC<CurrencySearchProps> = ({
   const { t } = useTranslation();
   const { account, chainId } = useActiveWeb3React();
   const dispatch = useDispatch<AppDispatch>();
-  const chainIdToUse = chainId ? chainId : ChainId.SEPOLIA;
+  const chainIdToUse = chainId ? chainId : ChainId.MATIC;
   const nativeCurrency = ETHER[chainIdToUse];
   const handleInput = useCallback((input: string) => {
     const checksummedInput = isAddress(input);

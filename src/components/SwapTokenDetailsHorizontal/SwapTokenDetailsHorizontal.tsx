@@ -27,7 +27,7 @@ const SwapTokenDetailsHorizontal: React.FC<{
   token: Token;
 }> = ({ token }) => {
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
   const currency = unwrappedToken(token);
   const tokenAddress = token.address;
   const { palette } = useTheme();

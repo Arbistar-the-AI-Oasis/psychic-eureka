@@ -20,7 +20,7 @@ const PoolsPage: React.FC = () => {
   const { t } = useTranslation();
   const { isV2 } = useIsV2();
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
   const config = getConfig(chainIdToUse);
   const pool = config['pools']['available'];
   const v3 = config['v3'];

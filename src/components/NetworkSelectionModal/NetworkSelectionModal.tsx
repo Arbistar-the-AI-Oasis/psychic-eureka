@@ -14,7 +14,7 @@ import { useTranslation } from 'react-i18next';
 import { ChainId } from '@arbistar/sdk';
 import { ApplicationModal } from 'state/application/actions';
 import { useIsSupportedNetwork } from 'utils';
-import { networkConnection, walletConnectConnection } from 'connectors';
+import { networkConnection } from 'connectors';
 
 const NetworkSelectionModal: React.FC = () => {
   const { t } = useTranslation();
@@ -26,7 +26,6 @@ const NetworkSelectionModal: React.FC = () => {
   const modalOpen = useModalOpen(ApplicationModal.NETWORK_SELECTION);
   const toggleModal = useNetworkSelectionModalToggle();
   const isSupportedNetwork = useIsSupportedNetwork();
-
   const switchNetwork = useCallback(
     async (chainId: ChainId) => {
       const config = getConfig(chainId);
@@ -37,10 +36,7 @@ const NetworkSelectionModal: React.FC = () => {
         nativeCurrency: config['nativeCurrency'],
         blockExplorerUrls: [config['blockExplorer']],
       };
-      if (
-        connector === walletConnectConnection.connector ||
-        connector === networkConnection.connector
-      ) {
+      if (connector === networkConnection.connector) {
         await connector.activate(chainId);
       } else {
         await connector.activate(chainParam);

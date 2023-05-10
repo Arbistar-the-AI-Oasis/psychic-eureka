@@ -70,6 +70,6 @@ export const RPC_PROVIDERS: {
   [ChainId.DOGE_TESTNET]: new AppJsonRpcProvider(ChainId.DOGE_TESTNET),
   [ChainId.ZK_EVM]: new AppJsonRpcProvider(ChainId.ZK_EVM),
   [ChainId.ZKTESTNET]: new AppJsonRpcProvider(ChainId.ZKTESTNET),
-  [ChainId.ARBITRUM]: new AppJsonRpcProvider(ChainId.ZK_EVM),
-  [ChainId.SEPOLIA]: new AppJsonRpcProvider(ChainId.ZKTESTNET),
+  [ChainId.ARBITRUM]: new AppJsonRpcProvider(ChainId.ARBITRUM),
+  [ChainId.SEPOLIA]: new AppJsonRpcProvider(ChainId.SEPOLIA),
 };

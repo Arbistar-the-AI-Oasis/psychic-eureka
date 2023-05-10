@@ -26,7 +26,7 @@ const PairTable: React.FC<PairsTableProps> = ({
 }) => {
   const { t } = useTranslation();
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
   const version = useAnalyticsVersion();
   const liquidityHeadCellIndex = version === 'total' ? 2 : 1;
 

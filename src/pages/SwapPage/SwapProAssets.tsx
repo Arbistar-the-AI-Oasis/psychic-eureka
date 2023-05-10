@@ -33,7 +33,7 @@ const SwapProAssets: React.FC = ({}) => {
   const theme = useTheme();
   const mobileWindowSize = useMediaQuery(theme.breakpoints.down('xs'));
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
 
   const inputRef = useRef<HTMLInputElement>();
   const handleInput = useCallback((input: string) => {

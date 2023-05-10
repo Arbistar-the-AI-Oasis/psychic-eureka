@@ -7,7 +7,7 @@
   "aprAPINetwork": "arbitrum",
   "chainId": 42161,
   "isMainnet": true,
-  "isOpened": false,
+  "isOpened": true,
   "nativeCurrencyImage": "/ARB.png",
   "nativeCurrency": {
     "name": "Ether",

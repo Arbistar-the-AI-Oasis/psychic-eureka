@@ -77,7 +77,7 @@ const RemoveLiquidityModal: React.FC<RemoveLiquidityModalProps> = ({
     ],
     [currency0, currency1, chainId],
   );
-  const chainIdToUse = chainId ? chainId : ChainId.SEPOLIA;
+  const chainIdToUse = chainId ? chainId : ChainId.MATIC;
   const nativeCurrency = ETHER[chainIdToUse];
   const { independentField, typedValue } = useBurnState();
   const { pair, parsedAmounts, error } = useDerivedBurnInfo(

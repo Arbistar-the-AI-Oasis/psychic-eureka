@@ -32,7 +32,7 @@ const TokensTable: React.FC<TokensTableProps> = ({
 }) => {
   const { t } = useTranslation();
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
   const tokenMap = useSelectedTokenList();
   const { isV2 } = useIsV2();
   const version = useMemo(() => `${isV2 ? `v2` : 'v3'}`, [isV2]);

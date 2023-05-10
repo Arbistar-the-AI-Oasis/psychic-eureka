@@ -17,7 +17,7 @@ import { GammaPair, GammaPairs, GlobalConst } from 'constants/index';
 export default function Farms() {
   const { t } = useTranslation();
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
 
   const parsedQuery = useParsedQueryString();
   const farmStatus =

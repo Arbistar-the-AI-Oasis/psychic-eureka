@@ -152,7 +152,7 @@ export function useDerivedSwapInfo(): {
   allowedSlippage: Percent;
 } {
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
 
   const {
     independentField,

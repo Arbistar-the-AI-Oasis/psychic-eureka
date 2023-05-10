@@ -3,12 +3,10 @@ import { useWeb3React } from '@web3-react/core';
 import { ChainId, Pair } from '@arbistar/sdk';
 import {
   ConnectionType,
-  coinbaseWalletConnection,
   getConnections,
   gnosisSafeConnection,
   injectedConnection,
   networkConnection,
-  walletConnectConnection,
 } from 'connectors';
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from 'state';
@@ -131,10 +129,6 @@ export function useGetConnection() {
       switch (c) {
         case ConnectionType.INJECTED:
           return injectedConnection;
-        case ConnectionType.COINBASE_WALLET:
-          return coinbaseWalletConnection;
-        case ConnectionType.WALLET_CONNECT:
-          return walletConnectConnection;
         case ConnectionType.NETWORK:
           return networkConnection;
         case ConnectionType.GNOSIS_SAFE:
@@ -200,7 +194,7 @@ export const useIsProMode = () => {
 
 export const useAnalyticsVersion = () => {
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
   const config = getConfig(chainIdToUse);
   const v2 = config['v2'];
   const v3 = config['v3'];

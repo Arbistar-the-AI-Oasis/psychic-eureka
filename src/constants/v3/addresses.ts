@@ -24,8 +24,8 @@ const WETH_ONLY: ChainTokenList = {
   [ChainId.DOGECHAIN]: [WETH[ChainId.DOGECHAIN]],
   [ChainId.ZKTESTNET]: [WETH[ChainId.ZKTESTNET]],
   [ChainId.ZK_EVM]: [WETH[ChainId.ZK_EVM]],
-  [ChainId.ARBITRUM]: [WETH[ChainId.ARBITRUM]],
-  [ChainId.SEPOLIA]: [WETH[ChainId.SEPOLIA]],
+  [ChainId.ARBITRUM]: [WETH[ChainId.ZKTESTNET]],
+  [ChainId.SEPOLIA]: [WETH[ChainId.ZK_EVM]],
 };
 
 export const toV3Token = (t: {
@@ -63,6 +63,8 @@ export const V3_CORE_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.DOGECHAIN]: '0xd2480162Aa7F02Ead7BF4C127465446150D58452',
   [ChainId.ZKTESTNET]: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
   [ChainId.ZK_EVM]: '0x4B9f4d2435Ef65559567e5DbFC1BbB37abC43B57',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0x12ca0BEa5A26755946B23C3b69eB30C306cd55c4',
 };
 
 export const POOL_DEPLOYER_ADDRESS: AddressMap = {
@@ -70,6 +72,8 @@ export const POOL_DEPLOYER_ADDRESS: AddressMap = {
   [ChainId.DOGECHAIN]: '0x56c2162254b0E4417288786eE402c2B41d4e181e',
   [ChainId.ZKTESTNET]: '0x6c28AeF8977c9B773996d0e8376d2EE379446F2f',
   [ChainId.ZK_EVM]: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0xaD360203ff6CE03F2747510108A077f02EeD7Ff9',
 };
 
 export const QUOTER_ADDRESSES: AddressMap = {
@@ -77,6 +81,8 @@ export const QUOTER_ADDRESSES: AddressMap = {
   [ChainId.DOGECHAIN]: '0xd8E1E7009802c914b0d39B31Fc1759A865b727B1',
   [ChainId.ZKTESTNET]: '0x930388c769Da7B4616493d47B5D093D8ec26C969',
   [ChainId.ZK_EVM]: '0x55BeE1bD3Eb9986f6d2d963278de09eE92a3eF1D',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0x790dF7c192814ef927fb24F57c026B843915fDb0',
 };
 
 export const SWAP_ROUTER_ADDRESSES: AddressMap = {
@@ -84,6 +90,8 @@ export const SWAP_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.DOGECHAIN]: '0x4aE2bD0666c76C7f39311b9B3e39b53C8D7C43Ea',
   [ChainId.ZKTESTNET]: '0x481FcFa00Ee6b2384FF0B3c3b5b29aD911c1AAA7',
   [ChainId.ZK_EVM]: '0xF6Ad3CcF71Abb3E12beCf6b3D2a74C963859ADCd',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0xc2430db974e82A37398343B117993f596596F658',
 };
 
 export const SWAP_ROUTER_ADDRESS: AddressMap = {
@@ -95,6 +103,8 @@ export const NONFUNGIBLE_POSITION_MANAGER_ADDRESSES: AddressMap = {
   [ChainId.DOGECHAIN]: '0x0b012055F770AE7BB7a8303968A7Fb6088A2296e',
   [ChainId.ZKTESTNET]: '0xE86Ba90bf805cEa452c8FA6E37b4ae2D17D32599',
   [ChainId.ZK_EVM]: '0xd8E1E7009802c914b0d39B31Fc1759A865b727B1',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0x24939284f77845cBBCd137EE68fB345E2D09Db15',
 };
 
 export const GAMMA_UNIPROXY_ADDRESSES: AddressMap = {
@@ -115,6 +125,8 @@ export const MULTICALL_ADDRESS: AddressMap = {
   [ChainId.DOGECHAIN]: '0x23602819a9E2B1C8eC7605356D5b0F1FBB10ddA5',
   [ChainId.ZKTESTNET]: '0x49b698B703D7bdFC81488Ca3C22Ad010eBCf2126',
   [ChainId.ZK_EVM]: '0x61530d6E1c7A47BBB3e48e8b8EdF7569DcFeE121',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0xcA11bde05977b3631167028862bE2a173976CA11',
 };
 
 export const V3_MIGRATOR_ADDRESSES: AddressMap = {
@@ -122,34 +134,46 @@ export const V3_MIGRATOR_ADDRESSES: AddressMap = {
   [ChainId.DOGECHAIN]: '0xB9aFAa5c407DdebA5098193F31CE23D21cFD9657',
   [ChainId.ZKTESTNET]: '0x6909BE1eA255885a02D182bdFB54eD838502Ec91',
   [ChainId.ZK_EVM]: '0x4aE2bD0666c76C7f39311b9B3e39b53C8D7C43Ea',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0x56e9268A6CCE496931324450a2D5EA3035a7fD2C',
 };
 
 export const REAL_STAKER_ADDRESS: AddressMap = {
   [ChainId.MATIC]: '0x32CFF674763b06B983C0D55Ef2e41B84D16855bb',
   [ChainId.DOGECHAIN]: '0x32CFF674763b06B983C0D55Ef2e41B84D16855bb',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0xcA11bde05977b3631167028862bE2a173976CA11',
 };
 
 export const FINITE_FARMING: AddressMap = {
   [ChainId.MATIC]: '0x9923f42a02A82dA63EE0DbbC5f8E311e3DD8A1f8',
   [ChainId.DOGECHAIN]: '0x481FcFa00Ee6b2384FF0B3c3b5b29aD911c1AAA7',
   [ChainId.ZK_EVM]: '0x17bE2Ed4409d8e6c22d46dE599f7C9Af40bD0759',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0xA1fF5A6F08D7Ae18b9901388E650ca807fe40358',
 };
 
 export const INFINITE_FARMING_ADDRESS: AddressMap = {
   [ChainId.MATIC]: '0x8a26436e41d0b5fc4C6Ed36C1976fafBe173444E',
   [ChainId.DOGECHAIN]: '0xC712F63E4D57ED1684FB4b428a1DFF10e3338F25',
   [ChainId.ZK_EVM]: '0x1fd3f47B363f5b844eD7B7FAB6ceb679A367621E',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0x7Be3F6f528611b476bc70cD9fd707AB220D0A4EE',
 };
 
 export const FARMING_CENTER: AddressMap = {
   [ChainId.MATIC]: '0x7F281A8cdF66eF5e9db8434Ec6D97acc1bc01E78',
   [ChainId.DOGECHAIN]: '0x82831E9565cb574375596eFc090da465283E22A4',
   [ChainId.ZK_EVM]: '0x481FcFa00Ee6b2384FF0B3c3b5b29aD911c1AAA7',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0x0ce14071d62402013fC19010825C719C0Df9b5B0',
 };
 
 export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.MATIC]: '0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32',
   [ChainId.DOGECHAIN]: '0xC3550497E591Ac6ed7a7E03ffC711CfB7412E57F',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0xcA11bde05977b3631167028862bE2a173976CA11',
 };
 
 export const EXCHANGE_FACTORY_ADDRESS_MAPS: ExchangeAddressMap = {
@@ -177,6 +201,8 @@ export const V2_ROUTER_ADDRESS: AddressMap = {
   [ChainId.MATIC]: '0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff',
   [ChainId.MUMBAI]: '0x8954AfA98594b838bda56FE4C12a09D7739D179b',
   [ChainId.DOGECHAIN]: '0xAF96E63f965374dB6514e8CF595fB0a3f4d7763c',
+  [ChainId.ARBITRUM]: '0xcA11bde05977b3631167028862bE2a173976CA11',
+  [ChainId.SEPOLIA]: '0xcA11bde05977b3631167028862bE2a173976CA11',
 };
 
 export const PARASWAP_PROXY_ROUTER_ADDRESS: AddressMap = {
@@ -198,14 +224,10 @@ export const NEW_LAIR_ADDRESS: AddressMap = {
 
 export const QUICK_ADDRESS: AddressMap = {
   [ChainId.MATIC]: '0x831753DD7087CaC61aB5644b308642cc1c33Dc13',
-  [ChainId.ARBITRUM]: '0x831753DD7087CaC61aB5644b308642cc1c33Dc13',
-  [ChainId.SEPOLIA]: '0x831753DD7087CaC61aB5644b308642cc1c33Dc13',
 };
 
 export const NEW_QUICK_ADDRESS: AddressMap = {
   [ChainId.MATIC]: '0xB5C064F955D8e7F38fE0460C556a72987494eE17',
-  [ChainId.ARBITRUM]: '0xB5C064F955D8e7F38fE0460C556a72987494eE17',
-  [ChainId.SEPOLIA]: '0xB5C064F955D8e7F38fE0460C556a72987494eE17',
 };
 
 export const DL_QUICK_ADDRESS: AddressMap = {
@@ -277,7 +299,7 @@ export const WMATIC_EXTENDED: { [chainId: number]: TokenV3 } = {
   ),
   [ChainId.ARBITRUM]: new TokenV3(
     ChainId.ARBITRUM,
-    '0xb16F35c0Ae2912430DAc15764477E179D9B9EbEa',
+    '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
     18,
     'WETH',
     'Wrapped ETHER',
@@ -322,7 +344,7 @@ export const USDC: { [chainId: number]: Token } = {
   ),
   [ChainId.ARBITRUM]: new Token(
     ChainId.ARBITRUM,
-    '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
+    '0x765277EebeCA2e31912C9946eAe1021199B39C61',
     6,
     'USDC',
     'USD Coin',
@@ -330,7 +352,7 @@ export const USDC: { [chainId: number]: Token } = {
   [ChainId.SEPOLIA]: new Token(
     ChainId.SEPOLIA,
     '0x34d570d1546632923e82563365281c59c708D7f1',
-    18,
+    6,
     'USDC',
     'USD Coin',
   ),
@@ -367,14 +389,14 @@ export const USDT: { [chainId: number]: Token } = {
   ),
   [ChainId.ARBITRUM]: new Token(
     ChainId.ARBITRUM,
-    '0x1E4a5963aBFD975d8c9021ce480b42188849D41d',
+    '0x765277EebeCA2e31912C9946eAe1021199B39C61',
     6,
     'USDT',
     'Tether USD',
   ),
   [ChainId.SEPOLIA]: new Token(
     ChainId.SEPOLIA,
-    '0x1E4a5963aBFD975d8c9021ce480b42188849D41d',
+    '0xaA943bc5EC47773cD605af62F746990D50146322',
     6,
     'USDT',
     'Tether USD',
@@ -389,40 +411,12 @@ export const OLD_QUICK: { [chainId: number]: Token } = {
     'QUICK(OLD)',
     'Quickswap(OLD)',
   ),
-  [ChainId.ARBITRUM]: new Token(
-    ChainId.ARBITRUM,
-    QUICK_ADDRESS[ChainId.ARBITRUM],
-    18,
-    'QUICK(OLD)',
-    'Quickswap(OLD)',
-  ),
-  [ChainId.SEPOLIA]: new Token(
-    ChainId.SEPOLIA,
-    QUICK_ADDRESS[ChainId.SEPOLIA],
-    18,
-    'QUICK(OLD)',
-    'Quickswap(OLD)',
-  ),
 };
 
 export const NEW_QUICK: { [chainId: number]: Token } = {
   [ChainId.MATIC]: new Token(
     ChainId.MATIC,
     NEW_QUICK_ADDRESS[ChainId.MATIC],
-    18,
-    'QUICK',
-    'QuickSwap(NEW)',
-  ),
-  [ChainId.ARBITRUM]: new Token(
-    ChainId.ARBITRUM,
-    NEW_QUICK_ADDRESS[ChainId.ARBITRUM],
-    18,
-    'QUICK',
-    'QuickSwap(NEW)',
-  ),
-  [ChainId.SEPOLIA]: new Token(
-    ChainId.SEPOLIA,
-    NEW_QUICK_ADDRESS[ChainId.SEPOLIA],
     18,
     'QUICK',
     'QuickSwap(NEW)',
@@ -480,7 +474,7 @@ export const WBTC: { [chainId: number]: Token } = {
   ),
   [ChainId.SEPOLIA]: new Token(
     ChainId.SEPOLIA,
-    '0xEA034fb02eB1808C2cc3adbC15f447B93CbE08e1',
+    '0x980A95832D20774D32c653A71e84d8eeca621225',
     8,
     'wBTC',
     'Wrapped Bitcoin',
@@ -511,14 +505,14 @@ export const DAI: { [chainId: number]: Token } = {
   ),
   [ChainId.ARBITRUM]: new Token(
     ChainId.ARBITRUM,
-    '0xC5015b9d9161Dca7e18e32f6f25C4aD850731Fd4',
+    '0x639A647fbe20b6c8ac19E48E2de44ea792c62c5C',
     18,
     'DAI',
     'Dai Stablecoin',
   ),
   [ChainId.SEPOLIA]: new Token(
     ChainId.SEPOLIA,
-    '0xC5015b9d9161Dca7e18e32f6f25C4aD850731Fd4',
+    '0xD2dbC6F36Acc7d760bB845D28eA50310Cc791718',
     18,
     'DAI',
     'Dai Stablecoin',
@@ -544,19 +538,15 @@ export const ETHER: { [chainId: number]: Token } = {
   ),
   [ChainId.ARBITRUM]: new Token(
     ChainId.ARBITRUM,
-    '0xB44a9B6905aF7c801311e8F4E76932ee959c663C',
+    '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
     18,
-    //TODO: this should really have a difference symbol but we use 'ETH' hardcoded to represent native
-    //Due to Uniswap SDK implmentation
     'ETH',
     'Ether',
   ),
   [ChainId.SEPOLIA]: new Token(
     ChainId.SEPOLIA,
-    '0xB44a9B6905aF7c801311e8F4E76932ee959c663C',
+    '0xFA83579eEc97290773602029c8970A18cfA742b5',
     18,
-    //TODO: this should really have a difference symbol but we use 'ETH' hardcoded to represent native
-    //Due to Uniswap SDK implmentation
     'ETH',
     'Ether',
   ),
@@ -586,20 +576,6 @@ export const MI: { [chainId: number]: Token } = {
     18,
     'MAI',
     'miMATIC',
-  ),
-  [ChainId.ARBITRUM]: new Token(
-    ChainId.ARBITRUM,
-    '0xfA9343C3897324496A05fC75abeD6bAC29f8A40f',
-    8,
-    'wBTC',
-    'Wrapped Bitcoin',
-  ),
-  [ChainId.SEPOLIA]: new Token(
-    ChainId.SEPOLIA,
-    '0xEA034fb02eB1808C2cc3adbC15f447B93CbE08e1',
-    8,
-    'wBTC',
-    'Wrapped Bitcoin',
   ),
 };
 
@@ -800,11 +776,11 @@ export const SUGGESTED_BASES: {
     WBTC[ChainId.ZK_EVM],
   ],
   [ChainId.ARBITRUM]: [
-    WETH[ChainId.ARBITRUM],
-    USDT[ChainId.ARBITRUM],
-    USDC[ChainId.ARBITRUM],
-    MATIC[ChainId.ARBITRUM],
+    ...WETH_ONLY[ChainId.ARBITRUM],
     DAI[ChainId.ARBITRUM],
+    USDC[ChainId.ARBITRUM],
+    USDT[ChainId.ARBITRUM],
+    ETHER[ChainId.ARBITRUM],
     WBTC[ChainId.ARBITRUM],
   ],
   [ChainId.SEPOLIA]: [
@@ -812,11 +788,8 @@ export const SUGGESTED_BASES: {
     DAI[ChainId.SEPOLIA],
     USDC[ChainId.SEPOLIA],
     USDT[ChainId.SEPOLIA],
-    OLD_QUICK[ChainId.SEPOLIA],
-    NEW_QUICK[ChainId.SEPOLIA],
     ETHER[ChainId.SEPOLIA],
     WBTC[ChainId.SEPOLIA],
-    MI[ChainId.SEPOLIA],
   ],
 };
 

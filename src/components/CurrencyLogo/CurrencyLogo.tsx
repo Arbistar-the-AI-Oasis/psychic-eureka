@@ -24,7 +24,7 @@ const CurrencyLogo: React.FC<CurrencyLogoProps> = ({
   withoutBg,
 }) => {
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ? chainId : ChainId.SEPOLIA;
+  const chainIdToUse = chainId ? chainId : ChainId.MATIC;
   const nativeCurrency = ETHER[chainIdToUse];
   const nativeCurrencyImage = '/' + currency?.symbol + '.png';
   const uriLocations = useHttpLocations(

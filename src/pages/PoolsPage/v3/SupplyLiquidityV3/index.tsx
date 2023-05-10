@@ -52,7 +52,7 @@ export function SupplyLiquidityV3() {
   const parsedQuery = useParsedQueryString();
   const isSupportedNetwork = useIsSupportedNetwork();
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
+  const chainIdToUse = chainId ?? ChainId.MATIC;
   const chainInfo = CHAIN_INFO[chainIdToUse];
   const currencyIdAParam =
     params && params.currencyIdA
@@ -87,7 +87,7 @@ export function SupplyLiquidityV3() {
 
   const dispatch = useAppDispatch();
 
-  const feeAmount = parseInt('100');
+  const feeAmount = 100;
 
   const expertMode = useIsExpertMode();
 
@@ -152,12 +152,6 @@ export function SupplyLiquidityV3() {
         chainSymbol = 'WDOGE';
       }
       if (chainId === ChainId.ZKTESTNET) {
-        chainSymbol = 'ETH';
-      }
-      if (chainId === ChainId.ARBITRUM) {
-        chainSymbol = 'ETH';
-      }
-      if (chainId === ChainId.SEPOLIA) {
         chainSymbol = 'ETH';
       }
 

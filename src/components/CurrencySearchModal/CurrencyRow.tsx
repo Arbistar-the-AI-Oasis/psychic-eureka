@@ -87,7 +87,7 @@ const CurrencyRow: React.FC<CurrenyRowProps> = ({
   const { account, chainId, connector } = useActiveWeb3React();
   const key = currencyKey(currency);
   const customAdded = useIsUserAddedToken(currency);
-  const chainIdToUse = chainId ? chainId : ChainId.SEPOLIA;
+  const chainIdToUse = chainId ? chainId : ChainId.MATIC;
   const nativeCurrency = ETHER[chainIdToUse];
 
   const removeToken = useRemoveUserAddedToken();
