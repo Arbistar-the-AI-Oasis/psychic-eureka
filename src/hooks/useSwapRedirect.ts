@@ -10,7 +10,7 @@ export default function useSwapRedirects() {
   const parsedQs = useParsedQueryString();
   const isProMode = useIsProMode();
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
 
   const redirectWithCurrency = useCallback(
     (currency: any, isInput: boolean, isV2 = true) => {

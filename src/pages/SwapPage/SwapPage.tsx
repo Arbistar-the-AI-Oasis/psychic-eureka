@@ -25,7 +25,7 @@ const SwapPage: React.FC = () => {
   const { currencies } = useDerivedSwapInfo();
   const { currencies: currenciesV3 } = useDerivedSwapInfoV3();
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const token1 = wrappedCurrency(currencies[Field.INPUT], chainIdToUse);
   const token2 = wrappedCurrency(currencies[Field.OUTPUT], chainIdToUse);
 

@@ -35,7 +35,7 @@ const AnalyticsSearch: React.FC = () => {
   const history = useHistory();
   const [searchVal, setSearchVal] = useState('');
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const config = getConfig(chainIdToUse);
   const v2 = config['v2'];
   const [searchValInput, setSearchValInput] = useDebouncedChangeHandler(

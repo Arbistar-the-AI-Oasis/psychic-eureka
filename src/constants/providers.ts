@@ -10,8 +10,8 @@ export const rpcMap = {
   [ChainId.MUMBAI]: 'https://rpc-mumbai.maticvigil.com/',
   [ChainId.DOGECHAIN]: 'https://rpc-sg.dogechain.dog/',
   [ChainId.DOGE_TESTNET]: 'https://rpc-testnet.dogechain.dog',
-  [ChainId.ZKTESTNET]: 'https://rpc.public.ZK_EVM-test.net',
-  [ChainId.ZK_EVM]: 'https://ZK_EVM-rpc.com',
+  [ChainId.ZKTESTNET]: 'https://rpc.public.zkevm-test.net',
+  [ChainId.ZK_EVM]: 'https://zkevm-rpc.com',
   [ChainId.ARBITRUM]: 'https://arb1.arbitrum.io/rpc',
   [ChainId.SEPOLIA]: 'https://rpc.sepolia.org',
 };

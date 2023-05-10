@@ -52,7 +52,7 @@ export function SupplyLiquidityV3() {
   const parsedQuery = useParsedQueryString();
   const isSupportedNetwork = useIsSupportedNetwork();
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const chainInfo = CHAIN_INFO[chainIdToUse];
   const currencyIdAParam =
     params && params.currencyIdA

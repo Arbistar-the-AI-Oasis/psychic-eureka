@@ -34,7 +34,7 @@ const PoolFinderModal: React.FC<PoolFinderModalProps> = ({ open, onClose }) => {
 
   const [showSearch, setShowSearch] = useState<boolean>(false);
   const [activeField, setActiveField] = useState<number>(Fields.TOKEN1);
-  const chainIdToUse = chainId ? chainId : ChainId.MATIC;
+  const chainIdToUse = chainId ? chainId : ChainId.SEPOLIA;
   const nativeCurrency = ETHER[chainIdToUse];
   const [currency0, setCurrency0] = useState<Currency | null>(nativeCurrency);
   const [currency1, setCurrency1] = useState<Currency | null>(null);
@@ -153,10 +153,10 @@ const PoolFinderModal: React.FC<PoolFinderModalProps> = ({ open, onClose }) => {
                   <Link
                     to={`/pools?currency0=${currencyId(
                       currency0,
-                      chainId ? chainId : ChainId.MATIC,
+                      chainId ? chainId : ChainId.SEPOLIA,
                     )}&currency1=${currencyId(
                       currency1,
-                      chainId ? chainId : ChainId.MATIC,
+                      chainId ? chainId : ChainId.SEPOLIA,
                     )}`}
                     className='text-primary no-decoration'
                     onClick={onClose}
@@ -171,10 +171,10 @@ const PoolFinderModal: React.FC<PoolFinderModalProps> = ({ open, onClose }) => {
                 <Link
                   to={`/pools?currency0=${currencyId(
                     currency0,
-                    chainId ? chainId : ChainId.MATIC,
+                    chainId ? chainId : ChainId.SEPOLIA,
                   )}&currency1=${currencyId(
                     currency1,
-                    chainId ? chainId : ChainId.MATIC,
+                    chainId ? chainId : ChainId.SEPOLIA,
                   )}`}
                   className='text-primary no-decoration'
                   onClick={onClose}

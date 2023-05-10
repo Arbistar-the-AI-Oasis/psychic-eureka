@@ -88,6 +88,8 @@ const EMPTY_LIST: CNTFarmInfoAddressMap = {
   [ChainId.DOGE_TESTNET]: {},
   [ChainId.ZKTESTNET]: {},
   [ChainId.ZK_EVM]: {},
+  [ChainId.ARBITRUM]: {},
+  [ChainId.SEPOLIA]: {},
 };
 
 const farmCache: WeakMap<CNTFarmListInfo, CNTFarmInfoAddressMap> | null =

@@ -93,6 +93,26 @@ export const WALLCHAIN_PARAMS = {
       apiKey: '',
     },
   },
+  [ChainId.ARBITRUM]: {
+    [SmartRouter.PARASWAP]: {
+      apiURL: '',
+      apiKey: '',
+    },
+    [SmartRouter.QUICKSWAP]: {
+      apiURL: '',
+      apiKey: '',
+    },
+  },
+  [ChainId.SEPOLIA]: {
+    [SmartRouter.PARASWAP]: {
+      apiURL: '',
+      apiKey: '',
+    },
+    [SmartRouter.QUICKSWAP]: {
+      apiURL: '',
+      apiKey: '',
+    },
+  },
 };
 
 export const BONUS_CUTOFF_AMOUNT = {
@@ -102,6 +122,8 @@ export const BONUS_CUTOFF_AMOUNT = {
   [ChainId.DOGECHAIN]: 0,
   [ChainId.ZKTESTNET]: 0,
   [ChainId.ZK_EVM]: 0,
+  [ChainId.ARBITRUM]: 0,
+  [ChainId.SEPOLIA]: 0,
 };
 
 export const GlobalConst = {

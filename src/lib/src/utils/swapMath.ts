@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import JSBI from 'jsbi';
 import { FeeAmount } from '../constants';
 import { NEGATIVE_ONE, ZERO } from '../internalConstants';

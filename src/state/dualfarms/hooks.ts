@@ -102,6 +102,8 @@ const EMPTY_LIST: DualFarmInfoAddressMap = {
   [ChainId.DOGE_TESTNET]: {},
   [ChainId.ZKTESTNET]: {},
   [ChainId.ZK_EVM]: {},
+  [ChainId.ARBITRUM]: {},
+  [ChainId.SEPOLIA]: {},
 };
 
 const dualFarmCache: WeakMap<DualFarmListInfo, DualFarmInfoAddressMap> | null =

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import JSBI from 'jsbi';
 
 import { FullMath } from './fullMath';

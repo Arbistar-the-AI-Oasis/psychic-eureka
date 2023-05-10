@@ -86,12 +86,12 @@ export const networkInfoMap: NetworkInfoChainMap = {
     scanUrl: 'https://explorer-testnet.dogechain.dog/',
   },
   [ChainId.ZKTESTNET]: {
-    rpcUrl: 'https://rpc.public.ZK_EVM-test.net',
-    scanUrl: 'https://testnet-ZK_EVM.polygonscan.com/',
+    rpcUrl: 'https://rpc.public.zkevm-test.net',
+    scanUrl: 'https://testnet-zkevm.polygonscan.com/',
   },
   [ChainId.ZK_EVM]: {
-    rpcUrl: 'https://ZK_EVM-rpc.com',
-    scanUrl: 'https://ZK_EVM.polygonscan.com/',
+    rpcUrl: 'https://zkevm-rpc.com',
+    scanUrl: 'https://zkevm.polygonscan.com/',
   },
   [ChainId.ARBITRUM]: {
     rpcUrl: 'https://arb1.arbitrum.io/rpc',
@@ -108,7 +108,7 @@ const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY;
 const MAINNET_NETWORK_URL = process.env.REACT_APP_MAINNET_NETWORK_URL;
 
 export const NETWORK_CHAIN_ID: number = parseInt(
-  process.env.REACT_APP_CHAIN_ID ?? '137',
+  process.env.REACT_APP_CHAIN_ID ?? '11155111',
 );
 
 const [web3Network, web3NetworkHooks] = initializeConnector<Network>(

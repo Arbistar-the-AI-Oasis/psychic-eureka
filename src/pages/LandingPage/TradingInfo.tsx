@@ -15,7 +15,7 @@ const TradingInfo: React.FC<{ globalData: any; v3GlobalData: any }> = ({
   v3GlobalData,
 }) => {
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const lairInfo = useNewLairInfo();
   const [openStakeModal, setOpenStakeModal] = useState(false);
 

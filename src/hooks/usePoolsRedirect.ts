@@ -8,7 +8,7 @@ import { useActiveWeb3React } from 'hooks';
 export default function usePoolsRedirect() {
   const history = useHistory();
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const params: any = useParams();
   const currentPath = history.location.pathname + history.location.search;
   const parsedQuery = useParsedQueryString();

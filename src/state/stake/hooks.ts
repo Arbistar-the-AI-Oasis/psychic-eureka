@@ -1435,7 +1435,7 @@ export function useOldLairInfo(): LairInfo | undefined {
   const lairContract = useLairContract();
   const quickContract = useQUICKContract();
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const lairAddress = LAIR_ADDRESS[chainIdToUse];
   const quickToken = OLD_QUICK[chainIdToUse];
   const dQuickToken = OLD_DQUICK[chainIdToUse];
@@ -2001,7 +2001,7 @@ export function useDerivedSyrupInfo(
   error?: string;
 } {
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const parsedInput: CurrencyAmount | undefined = tryParseAmount(
     chainIdToUse,
     typedValue,
@@ -2039,7 +2039,7 @@ export function useDerivedStakeInfo(
   error?: string;
 } {
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const parsedInput: CurrencyAmount | undefined = tryParseAmount(
     chainIdToUse,
     typedValue,
@@ -2076,7 +2076,7 @@ export function useDerivedLairInfo(
   error?: string;
 } {
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const parsedInput: CurrencyAmount | undefined = tryParseAmount(
     chainIdToUse,
     typedValue,
@@ -2113,7 +2113,7 @@ export function useDerivedUnstakeInfo(
   error?: string;
 } {
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const parsedInput: CurrencyAmount | undefined = tryParseAmount(
     chainIdToUse,
     typedValue,
@@ -2148,7 +2148,7 @@ export function useDerivedUnstakeLairInfo(
   error?: string;
 } {
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
 
   const parsedInput: CurrencyAmount | undefined = tryParseAmount(
     chainIdToUse,

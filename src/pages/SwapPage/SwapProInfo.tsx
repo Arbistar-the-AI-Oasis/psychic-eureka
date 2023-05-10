@@ -28,7 +28,7 @@ const SwapProInfo: React.FC<{
   const { ethPrice } = useEthPrice();
   const { maticPrice } = useMaticPrice();
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
 
   useEffect(() => {
     (async () => {

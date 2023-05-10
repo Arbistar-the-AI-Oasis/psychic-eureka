@@ -77,7 +77,7 @@ import { useTranslation } from 'react-i18next';
 const SwapV3Page: React.FC = () => {
   const { t } = useTranslation();
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const history = useHistory();
   console.log(chainIdToUse);
   const loadedUrlParams = useDefaultsFromURLSearch();

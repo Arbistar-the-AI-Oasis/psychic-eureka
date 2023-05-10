@@ -41,7 +41,7 @@ export default function StakeModalFarmingTiers({
   multiplierToken,
 }: StakeModalFarmingTiersProps) {
   const { account, chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const { t } = useTranslation();
 
   const [selectedTier, setSelectedTier] = useState<number | undefined>(0);

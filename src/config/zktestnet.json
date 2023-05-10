@@ -1,9 +1,9 @@
 {
   "v3": true,
   "v2": false,
-  "rpc": "https://rpc.public.ZK_EVM-test.net",
-  "blockExplorer": "https://testnet-ZK_EVM.polygonscan.com",
-  "networkName": "Polygon ZK_EVM Testnet",
+  "rpc": "https://rpc.public.zkevm-test.net",
+  "blockExplorer": "https://testnet-zkevm.polygonscan.com",
+  "networkName": "Polygon zkevm Testnet",
   "chainId": 1442,
   "isMainnet": false,
   "isOpened": false,

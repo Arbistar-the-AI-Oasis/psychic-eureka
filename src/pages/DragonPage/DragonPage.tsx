@@ -23,7 +23,7 @@ const DragonPage: React.FC = () => {
   //showing old dragons lair until we're ready to deploy
 
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   const quickToken = DLQUICK[chainIdToUse];
   const dQuickToken = DLDQUICK[chainIdToUse];
   const config = getConfig(chainIdToUse);

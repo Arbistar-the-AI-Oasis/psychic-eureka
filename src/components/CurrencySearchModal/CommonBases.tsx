@@ -20,7 +20,7 @@ const CommonBases: React.FC<CommonBasesProps> = ({
 }) => {
   const { t } = useTranslation();
 
-  const chainIdToUse = chainId ? chainId : ChainId.MATIC;
+  const chainIdToUse = chainId ? chainId : ChainId.SEPOLIA;
   const { isV2 } = useIsV2();
   const nativeCurrency = isV2
     ? ETHER[chainIdToUse]

@@ -6,19 +6,19 @@ import { ChainId } from '@arbistar/sdk';
 
 export function useBlockClient(): ApolloClient<NormalizedCacheObject> {
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   return blockClient[chainIdToUse];
 }
 
 export function useV3Client(): ApolloClient<NormalizedCacheObject> {
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   return clientV3[chainIdToUse];
 }
 
 export function useFarmingClient(): ApolloClient<NormalizedCacheObject> {
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   return farmingClient[chainIdToUse];
 }
 

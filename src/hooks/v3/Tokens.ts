@@ -185,7 +185,7 @@ export function useCurrency(
   currencyId: string | undefined,
 ): Currency | null | undefined {
   const { chainId } = useActiveWeb3React();
-  const chainIdToUse = chainId ?? ChainId.MATIC;
+  const chainIdToUse = chainId ?? ChainId.SEPOLIA;
   console.log(chainIdToUse);
   const chainInfo = CHAIN_INFO[chainIdToUse];
 
